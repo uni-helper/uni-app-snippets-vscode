@@ -9,6 +9,6 @@ module.exports = {
   },
   hooks: {
     'after:bump':
-      'tsx ./scripts/generate.ts && vsce package && vsce publish -p $VSCE_PAT && ovsx publish -p $OVSX_PAT',
+      'tsx ./scripts/generate.ts && vsce package --no-dependencies && vsce publish -p $VSCE_PAT --no-dependencies && ovsx publish -p $OVSX_PAT',
   },
 };
