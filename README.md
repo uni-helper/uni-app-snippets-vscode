@@ -1,12 +1,12 @@
-# @uni-helper/vscode-uni-app-snippets
+# @uni-helper/uni-app-snippets-vscode
 
-[![License](https://img.shields.io/github/license/uni-helper/vscode-uni-app-snippets)](https://github.com/uni-helper/vscode-uni-app-snippets/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/uni-helper/uni-app-snippets-vscode)](https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/LICENSE)
 
-[![VSCode](https://vsmarketplacebadge.apphb.com/version-short/uni-helper.vscode-uni-app-snippets.svg)](https://marketplace.visualstudio.com/items?itemName=uni-helper.vscode-uni-app-snippets)
+[![VSCode](https://vsmarketplacebadge.apphb.com/version-short/uni-helper.uni-app-snippets-vscode.svg)](https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode)
 
-[![OpenVSX](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=OpenVSX&query=%24.version&url=https%3A%2F%2Fopen-vsx.org%2Fapi%2Funi-helper%2Fvscode-uni-app-snippets)](https://open-vsx.org/extension/uni-helper/vscode-uni-app-snippets)
+[![OpenVSX](https://img.shields.io/badge/dynamic/json?color=brightgreen&label=OpenVSX&query=%24.version&url=https%3A%2F%2Fopen-vsx.org%2Fapi%2Funi-helper%2Funi-app-snippets-vscode)](https://open-vsx.org/extension/uni-helper/uni-app-snippets-vscode)
 
-[改动日志](https://github.com/uni-helper/vscode-uni-app-snippets/blob/main/CHANGELOG.md)
+[改动日志](https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/CHANGELOG.md)
 
 ## 插件特性
 
@@ -16,7 +16,7 @@
 
 **插件和文档的冲突之处，请以文档为准。**
 
-插件源代码在 [uni-helper/vscode-uni-app-snippets](https://github.com/uni-helper/vscode-uni-app-snippets)。欢迎提交 ISSUE 和 PR 改进本插件。
+插件源代码在 [uni-helper/uni-app-snippets-vscode](https://github.com/uni-helper/uni-app-snippets-vscode)。欢迎提交 ISSUE 和 PR 改进本插件。
 
 ## 使用
 
@@ -382,4 +382,4 @@
 
 ## 额外推荐
 
-请查看 [uni-helper 插件说明](https://marketplace.visualstudio.com/items?itemName=uni-helper.vscode-uni-helper)。
+请查看 [uni-helper 插件说明](https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-helper-vscode)。
