@@ -1,6 +1,6 @@
 # 改动日志
 
-## 0.10.0
+## 0.9.4
 
 - 切换到 [uni-helper](https://github.com/uni-helper) 组织下
 
