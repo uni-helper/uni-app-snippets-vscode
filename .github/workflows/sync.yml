@@ -12,7 +12,7 @@ jobs:
       - name: Sync to Gitee
         uses: wearerequired/git-mirror-action@master
         with:
-          source-repo: git@github.com:uni-helper/vscode-uni-app-snippets.git
-          destination-repo: git@gitee.com:uni-helper/vscode-uni-app-snippets.git
+          source-repo: git@github.com:uni-helper/uni-app-snippets-vscode.git
+          destination-repo: git@gitee.com:uni-helper/uni-app-snippets-vscode.git
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
