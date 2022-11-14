@@ -128,7 +128,7 @@
     "node": ">=14.16",
     "vscode": "^1.40.0"
   },
-  "icon": "uni-app.png",
+  "icon": "uni-helper.png",
   "sponsor": {
     "url": "https://www.paypal.me/wurui7"
   }

@@ -1,5 +1,9 @@
 # 改动日志
 
+## 0.9.5
+
+- 优化流程
+
 ## 0.9.4
 
 - 切换到 [uni-helper](https://github.com/uni-helper) 组织下
