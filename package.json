@@ -35,7 +35,10 @@
     "lint:eslint": "eslint . --fix --ext=.js,.cjs,.mjs,.jsx,.ts,.cts,.mts,.tsx,.vue --ignore-path=.gitignore --cache",
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "release": "release-it",
-    "prepare": "is-ci || husky install"
+    "prepare": "is-ci || husky install",
+    "publish": "run-p publish:vscode publish:openvsx",
+    "publish:vscode": "vsce package && vsce publish",
+    "publish:openvsx": "ovsx publish"
   },
   "contributes": {
     "snippets": [
