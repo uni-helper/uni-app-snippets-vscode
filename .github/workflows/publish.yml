@@ -6,7 +6,7 @@ on:
       - 'v*'
 
 jobs:
-  sync:
+  publish:
     runs-on: ubuntu-latest
 
     steps:
