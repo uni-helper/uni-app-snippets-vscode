@@ -1379,7 +1379,7 @@
     ],
     "description": "uni-app 显示模态弹窗。更多信息查看 <https://uniapp.dcloud.io/api/ui/prompt?id=showmodal>。"
   },
-  "uni-app ​显示操作菜单": {
+  "uni-app 显示操作菜单": {
     "prefix": ["uni.showActionSheet"],
     "body": [
       "uni.showActionSheet({",
