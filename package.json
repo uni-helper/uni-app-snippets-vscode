@@ -35,7 +35,7 @@
     "check:deps": "ncu --dep dev,optional,prod,packageManager",
     "check:types": "tsc --noEmit",
     "lint": "run-p lint:eslint lint:markdownlint check:types",
-    "lint:eslint": "eslint .--fix --cache --no-error-on-unmatched-pattern",
+    "lint:eslint": "eslint . --fix --cache --no-error-on-unmatched-pattern",
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "release": "release-it",
     "prepare": "is-ci || husky install",
