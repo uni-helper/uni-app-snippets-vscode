@@ -1,9 +1,11 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { simpleGit } from 'simple-git';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
+const readmePath = resolve(root, 'README.md');
 
 const htmlObject = JSON.parse(
   readFileSync(resolve(root, 'snippets', 'vue-html.json'), { encoding: 'utf8' }),
@@ -130,4 +132,6 @@ readme += `## 额外推荐
 请查看 [uni-helper 插件说明](https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-helper-vscode)。
 `;
 
-writeFileSync(resolve(root, 'README.md'), readme);
+writeFileSync(readmePath, readme);
+
+await simpleGit().add(readmePath);
