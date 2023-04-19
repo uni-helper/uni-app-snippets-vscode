@@ -36,7 +36,7 @@
     "check:types": "tsc --noEmit",
     "lint": "run-p lint:eslint lint:markdownlint check:types",
     "lint:eslint": "eslint . --fix --cache --ignore-path=.gitignore",
-    "lint:markdownlint": "markdownlint . --fix --ignore=CHANGELOG.md --ignore-path=.gitignore",
+    "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "release": "bumpp --all -x=\"tsx ./scripts/update-readme.ts\"",
     "prepare": "is-ci || husky install",
     "publish": "run-p publish:vscode publish:openvsx",
