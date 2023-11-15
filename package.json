@@ -128,7 +128,7 @@
     "tsx": "^4.1.2",
     "typescript": "^5.2.2"
   },
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "npm@10.2.3",
   "engines": {
     "node": ">=18",
     "vscode": "^1.40.0"
