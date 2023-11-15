@@ -856,10 +856,15 @@
     "body": ["uni.canIUse('$1')$0"],
     "description": "uni-app 判断 API、回调、参数、组件等是否在当前版本可用。更多信息查看 <https://uniapp.dcloud.io/api/system/info?id=caniuse>。"
   },
-  "uni-app 内存不足告警": {
+  "uni-app 监听内存不足告警": {
     "prefix": ["uni.onMemoryWarning"],
     "body": ["uni.onMemoryWarning(() => {$1})$0"],
-    "description": "uni-app 内存不足告警时触发。更多信息查看 <https://uniapp.dcloud.io/api/system/memory>。"
+    "description": "uni-app 监听内存不足告警。更多信息查看 <https://uniapp.dcloud.io/api/system/memory>。"
+  },
+  "uni-app 移除监听内存不足告警": {
+    "prefix": ["uni.offMemoryWarning"],
+    "body": ["uni.offMemoryWarning(() => {$1})$0"],
+    "description": "uni-app 移除监听内存不足告警。更多信息查看 <https://uniapp.dcloud.io/api/system/memory>。"
   },
   "uni-app 获取网络类型": {
     "prefix": ["uni.getNetworkType"],
@@ -1057,6 +1062,22 @@
     "prefix": ["uni.onUserCaptureScreen"],
     "body": ["uni.onUserCaptureScreen(() => {$1})$0"],
     "description": "uni-app 监听截屏。更多信息查看 <https://uniapp.dcloud.io/api/system/capture-screen>。"
+  },
+  "uni-app 移除监听截屏": {
+    "prefix": ["uni.offUserCaptureScreen"],
+    "body": ["uni.offUserCaptureScreen(() => {$1})$0"],
+    "description": "uni-app 移除监听截屏。更多信息查看 <https://uniapp.dcloud.io/api/system/capture-screen>。"
+  },
+  "uni-app 切换防截屏": {
+    "prefix": ["uni.setUserCaptureScreen"],
+    "body": [
+      "uni.setUserCaptureScreen({",
+      "\tenable: ${1|true,false|},",
+      "\tsuccess: ({ errCode, errMsg, errSubject }) => {$2},",
+      "\tfail: (error) => {$3}",
+      "})$0"
+    ],
+    "description": "uni-app 切换防截屏。更多信息查看 <https://uniapp.dcloud.io/api/system/capture-screen>。"
   },
   "uni-app 使手机振动": {
     "prefix": ["uni.vibrate"],
@@ -1943,8 +1964,104 @@
       "\tenableDebug: ${1|true,false|}",
       "\tsuccess: (result) => {$2},",
       "\tfail: (error) => {$3}",
-      "})"
+      "})$0"
     ],
     "description": "uni-app 设置调试开关。更多信息查看 <https://uniapp.dcloud.io/api/other/set-enable-debug>。"
+  },
+  "uni-app 获取电池电量信息": {
+    "prefix": ["uni.getBatteryInfo"],
+    "body": [
+      "uni.getBatteryInfo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app 获取电池电量信息，需要下载插件 <https://ext.dcloud.net.cn/plugin?name=uni-getbatteryinfo>。更多信息查看 <https://uniapp.dcloud.net.cn/uni-app-x/api/get-battery-info.html>。"
+  },
+  "uni-app 同步获取电池电量信息": {
+    "prefix": ["uni.getBatteryInfoSync"],
+    "body": ["uni.getBatteryInfoSync()$0"],
+    "description": "uni-app 同步获取电池电量信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/batteryInfo.html>。"
+  },
+  "uni-app 安装 APK": {
+    "prefix": ["uni.installApk"],
+    "body": [
+      "uni.installApk({",
+      "\tfilePath: $1,",
+      "\tsuccess: (result) => {$2},",
+      "\tfail: (error) => {$3}",
+      "})$0"
+    ],
+    "description": "uni-app 安装 APK，需要下载插件 <https://ext.dcloud.net.cn/plugin?name=uni-installApk>。更多信息查看 <https://uniapp.dcloud.net.cn/uni-app-x/api/install-apk.html>。"
+  },
+  "uni-app 初始化 WiFi 模块": {
+    "prefix": ["uni.startWifi"],
+    "body": ["uni.startWifi({", "\tsuccess: (result) => {$1},", "\tfail: (error) => {$2}", "})$0"],
+    "description": "uni-app 初始化 WiFi 模块。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 关闭 WiFi 模块": {
+    "prefix": ["uni.stopWifi"],
+    "body": ["uni.stopWifi({", "\tsuccess: (result) => {$1},", "\tfail: (error) => {$2}", "})$0"],
+    "description": "uni-app 关闭 WiFi 模块。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 连接 WiFi": {
+    "prefix": ["uni.connectWifi"],
+    "body": [
+      "uni.connectWifi({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app 连接 WiFi。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 获取 WiFi 列表": {
+    "prefix": ["uni.getWifiList"],
+    "body": [
+      "uni.getWifiList({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app 获取 WiFi 列表。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 监听获取 WiFi 列表": {
+    "prefix": ["uni.onGetWifiList"],
+    "body": ["uni.onGetWifiList($1)$0"],
+    "description": "uni-app 监听获取 WiFi 列表。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 移除监听获取 WiFi 列表": {
+    "prefix": ["uni.offGetWifiList"],
+    "body": ["uni.offGetWifiList($1)$0"],
+    "description": "uni-app 移除监听获取 WiFi 列表。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 获取已连接的 WiFi 信息": {
+    "prefix": ["uni.getConnectedWifi"],
+    "body": [
+      "uni.getConnectedWifi({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app 获取已连接的 WiFi 信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 监听连接 WiFi": {
+    "prefix": ["uni.onWifiConnected"],
+    "body": ["uni.onWifiConnected($1)$0"],
+    "description": "uni-app 监听连接 WiFi。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 移除监听连接 WiFi": {
+    "prefix": ["uni.offWifiConnected"],
+    "body": ["uni.offWifiConnected($1)$0"],
+    "description": "uni-app 移除监听连接 WiFi。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 监听连接 WiFi（信息更少）": {
+    "prefix": ["uni.onWifiConnectedWithPartialInfo"],
+    "body": ["uni.onWifiConnectedWithPartialInfo($1)$0"],
+    "description": "uni-app 监听连接 WiFi（信息更少）。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 移除监听连接 WiFi（信息更少）": {
+    "prefix": ["uni.offWifiConnectedWithPartialInfo"],
+    "body": ["uni.offWifiConnectedWithPartialInfo($1)$0"],
+    "description": "uni-app 移除监听连接 WiFi（信息更少）。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
   }
 }
