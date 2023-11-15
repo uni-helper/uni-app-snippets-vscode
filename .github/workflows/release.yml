@@ -17,8 +17,8 @@ jobs:
           cache: npm
           registry-url: https://registry.npmjs.org
       - run: corepack enable
-      - run: pnpm install
-      - run: pnpm run publish
+      - run: npm install
+      - run: npm run publish
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
           OVSX_PAT: ${{ secrets.OVSX_PAT }}

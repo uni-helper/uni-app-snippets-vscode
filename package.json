@@ -34,11 +34,11 @@
   "scripts": {
     "check:deps": "taze",
     "check:types": "tsc --noEmit",
-    "lint": "conc \"pnpm:lint:eslint\" \"pnpm:lint:markdownlint\"",
+    "lint": "conc \"npm:lint:eslint\" \"npm:lint:markdownlint\"",
     "lint:eslint": "eslint . --fix --cache --ignore-path=.gitignore",
     "lint:markdownlint": "markdownlint . --fix --ignore-path=.gitignore",
     "prepare": "is-ci || simple-git-hooks",
-    "publish": "conc \"pnpm:publish:vscode\" \"pnpm:publish:openvsx\"",
+    "publish": "conc \"npm:publish:vscode\" \"npm:publish:openvsx\"",
     "publish:openvsx": "ovsx publish",
     "publish:vscode": "vsce package && vsce publish",
     "release": "bumpp --all -x=\"tsx ./scripts/update-readme.ts\""
