@@ -27,7 +27,7 @@ let readme = `# @uni-helper/uni-app-snippets-vscode
 
 [改动日志](https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/CHANGELOG.md)
 
-想发现更多强大工具？不妨看看 [uni-helper 主页](https://uni-helper.js.org) 和 [uni-helper GitHub Organization](https://github.com/uni-helper)！
+想让 \`uni-app\` 开发变得更直观、高效？想要更好的 \`uni-app\` 开发体验？不妨看看 [uni-helper 主页](https://uni-helper.js.org) 和 [uni-helper GitHub Organization](https://github.com/uni-helper)！
 
 ## 插件特性
 
