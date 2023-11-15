@@ -1,23 +1,58 @@
 {
+  "uni-app VUE3 平台": {
+    "prefix": ["platform-vue3", "vue3"],
+    "body": ["VUE3"],
+    "description": "uni-app VUE3 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
+  "uni-app UNI-APP-X 平台": {
+    "prefix": ["platform-uni-app-x", "uni-app-x"],
+    "body": ["UNI-APP-X"],
+    "description": "uni-app UNI-APP-X 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
+  "uni-app uniVersion 平台": {
+    "prefix": ["platform-uni-version", "platform-uniVersion", "uni-version", "uniVersion"],
+    "body": ["uniVersion"],
+    "description": "uni-app uniVersion 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
   "uni-app APP 平台": {
-    "prefix": ["platform-app", "app", "platform-app-plus", "app-plus"],
-    "body": ["APP-PLUS"],
+    "prefix": ["platform-app", "app"],
+    "body": ["APP"],
     "description": "uni-app APP 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
+  "uni-app APP-PLUS 平台": {
+    "prefix": ["platform-app-plus", "app-plus"],
+    "body": ["APP-PLUS"],
+    "description": "uni-app APP-PLUS 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
+  "uni-app APP-PLUS-NVUE 平台": {
+    "prefix": ["platform-app-plus-nvue", "app-plus-nvue"],
+    "body": ["APP-PLUS-NVUE"],
+    "description": "uni-app APP-PLUS-NVUE 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
   "uni-app APP-NVUE 平台": {
-    "prefix": ["platform-app-nvue", "app-nvue", "platform-app-plus-nvue", "app-plus-nvue"],
+    "prefix": ["platform-app-nvue", "app-nvue"],
     "body": ["APP-NVUE"],
     "description": "uni-app APP-NVUE 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
+  "uni-app APP-ANDROID 平台": {
+    "prefix": ["platform-app-android", "app-android"],
+    "body": ["APP-ANDROID"],
+    "description": "uni-app APP-ANDROID 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
+  "uni-app APP-IOS 平台": {
+    "prefix": ["platform-app-ios", "app-ios"],
+    "body": ["APP-IOS"],
+    "description": "uni-app APP-IOS 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app H5 平台": {
     "prefix": ["platform-h5", "h5"],
     "body": ["H5"],
     "description": "uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
-  "uni-app 小程序平台": {
-    "prefix": ["platform-mp", "mp", "platform-miniprogram", "miniprogram"],
-    "body": ["MP"],
-    "description": "uni-app 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  "uni-app WEB 平台": {
+    "prefix": ["platform-web", "web"],
+    "body": ["WEB"],
+    "description": "uni-app WEB 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 微信小程序平台": {
     "prefix": [
@@ -109,6 +144,11 @@
     "body": ["MP-XHS"],
     "description": "uni-app 小红书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
+  "uni-app 小程序平台": {
+    "prefix": ["platform-mp", "mp", "platform-miniprogram", "miniprogram"],
+    "body": ["MP"],
+    "description": "uni-app 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
+  },
   "uni-app 快应用通用平台": {
     "prefix": ["platform-quickapp", "quickapp", "platform-quickapp-webview", "quickapp-webview"],
     "body": ["QUICKAPP-WEBVIEW"],
@@ -137,7 +177,7 @@
   "uni-app 条件编译，处理某平台": {
     "prefix": ["#ifdef", "ifdef"],
     "body": [
-      "// #ifdef ${1|APP-PLUS,APP-NVUE,H5,MP,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
+      "// #ifdef ${1|VUE3,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
       "$2",
       "// #endif"
     ],
@@ -146,7 +186,7 @@
   "uni-app 条件编译，排除某平台": {
     "prefix": ["#ifndef", "ifndef"],
     "body": [
-      "// #ifndef ${1|APP-PLUS,APP-NVUE,H5,MP,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
+      "// #ifndef ${1|VUE3,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
       "$2",
       "// #endif"
     ],
@@ -157,25 +197,45 @@
     "body": ["// #endif"],
     "description": "uni-app 结束条件编译。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
-  "uni-app 判断是否为开发环境": {
+  "uni-app 根据 process.env.NODE_ENV 判断是否为开发环境": {
     "prefix": ["process.env.NODE_ENV === 'development'"],
     "body": ["process.env.NODE_ENV === 'development'"],
-    "description": "uni-app 判断是否为开发环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+    "description": "uni-app 根据 process.env.NODE_ENV 判断是否为开发环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
   },
-  "uni-app 判断是否不为开发环境": {
+  "uni-app 根据 process.env.NODE_ENV 判断是否不为开发环境": {
     "prefix": ["process.env.NODE_ENV !== 'development'"],
     "body": ["process.env.NODE_ENV !== 'development'"],
-    "description": "uni-app 判断是否不为开发环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+    "description": "uni-app 根据 process.env.NODE_ENV 判断是否不为开发环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
   },
-  "uni-app 判断是否为生产环境": {
+  "uni-app 根据 process.env.NODE_ENV 判断是否为生产环境": {
     "prefix": ["process.env.NODE_ENV === 'production'"],
     "body": ["process.env.NODE_ENV === 'production'"],
-    "description": "uni-app 判断是否为生产环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+    "description": "uni-app 根据 process.env.NODE_ENV 判断是否为生产环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
   },
-  "uni-app 判断是否不为生产环境": {
+  "uni-app 根据 process.env.NODE_ENV 判断是否不为生产环境": {
     "prefix": ["process.env.NODE_ENV !== 'production'"],
     "body": ["process.env.NODE_ENV !== 'production'"],
-    "description": "uni-app 判断是否不为生产环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+    "description": "uni-app 根据 process.env.NODE_ENV 判断是否不为生产环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+  },
+  "uni-app 根据 import.meta.DEV 判断是否为开发环境": {
+    "prefix": ["import.meta.env.DEV"],
+    "body": ["import.meta.env.DEV"],
+    "description": "uni-app 根据 import.meta.DEV 判断是否为开发环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+  },
+  "uni-app 根据 import.meta.env.DEV 判断是否不为开发环境": {
+    "prefix": ["!import.meta.env.DEV"],
+    "body": ["!import.meta.env.DEV"],
+    "description": "uni-app 根据 import.meta.DEV 判断是否不为开发环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+  },
+  "uni-app 根据 import.meta.env.PROD 判断是否为生产环境": {
+    "prefix": ["import.meta.env.PROD"],
+    "body": ["import.meta.env.PROD"],
+    "description": "uni-app 根据 import.meta.DEV 判断是否为生产环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
+  },
+  "uni-app 根据 import.meta.env.PROD 判断是否不为生产环境": {
+    "prefix": ["!import.meta.env.PROD"],
+    "body": ["!import.meta.env.PROD"],
+    "description": "uni-app 根据 import.meta.DEV 判断是否不为生产环境。更多信息查看 <https://cli.vuejs.org/zh/guide/mode-and-env.html>。"
   },
   "uni-app base64 转 ArrayBuffer": {
     "prefix": ["uni.base64ToArrayBuffer"],
