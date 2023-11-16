@@ -41,7 +41,7 @@
     "publish": "conc \"npm:publish:vscode\" \"npm:publish:openvsx\"",
     "publish:openvsx": "ovsx publish",
     "publish:vscode": "vsce package && vsce publish",
-    "release": "bumpp --all -x=\"tsx ./scripts/update-readme.ts\""
+    "release": "npm run lint && npm run check:types && bumpp --all -x=\"tsx ./scripts/update-readme.ts\""
   },
   "contributes": {
     "snippets": [
