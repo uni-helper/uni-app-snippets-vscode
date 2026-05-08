@@ -39,7 +39,7 @@ let readme = `# @uni-helper/uni-app-snippets-vscode
 ## 插件特性
 
 - uni-app 基本能力代码片段
-- 参考 [uni-app 官方组件文档](https://uniapp.dcloud.io/component/)
+- 参考 [uni-app 官方组件文档](https://uniapp.dcloud.net.cn/component/)
 - 参考 [Vue.js 2 风格指南](https://v2.cn.vuejs.org/v2/style-guide/) 和 [Vue.js 3 风格指南](https://cn.vuejs.org/style-guide/)
 
 **插件和文档的冲突之处，请以文档为准。**

@@ -137,5 +137,5 @@
 
 - uni-app 基本能力的代码片段，包括组件和 API
 - 支持 vue2
-- 参考 [uni-app 官方组件文档](https://uniapp.dcloud.io/component/README)
+- 参考 [uni-app 官方组件文档](https://uniapp.dcloud.net.cn/component/README)
 - 参考 [Vue.js 风格指南](https://cn.vuejs.org/v2/style-guide/index.html)
