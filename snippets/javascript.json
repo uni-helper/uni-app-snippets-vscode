@@ -4,6 +4,16 @@
     "body": ["VUE3"],
     "description": "uni-app VUE3 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
   },
+  "uni-app VUE3-VAPOR 平台": {
+    "prefix": ["platform-vue3-vapor", "vue3-vapor"],
+    "body": ["VUE3-VAPOR"],
+    "description": "uni-app VUE3-VAPOR 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
+  },
+  "uni-app VUE2 平台": {
+    "prefix": ["platform-vue2", "vue2"],
+    "body": ["VUE2"],
+    "description": "uni-app VUE2 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
+  },
   "uni-app UNI-APP-X 平台": {
     "prefix": ["platform-uni-app-x", "uni-app-x"],
     "body": ["UNI-APP-X"],
@@ -57,7 +67,7 @@
   "uni-app H5 平台": {
     "prefix": ["platform-h5", "h5"],
     "body": ["H5"],
-    "description": "uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
+    "description": "推荐使用 WEB。uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
   },
   "uni-app WEB 平台": {
     "prefix": ["platform-web", "web"],
@@ -154,6 +164,11 @@
     "body": ["MP-360"],
     "description": "uni-app 360 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
   },
+  "uni-app 鸿蒙元服务小程序平台": {
+    "prefix": ["platform-mp-harmony", "mp-harmony"],
+    "body": ["MP-HARMONY"],
+    "description": "uni-app 鸿蒙元服务小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
+  },
   "uni-app 小红书小程序平台": {
     "prefix": ["platform-mp-xhs", "mp-xhs", "platform-xhs", "xhs"],
     "body": ["MP-XHS"],
@@ -197,7 +212,7 @@
   "uni-app 条件编译，处理某平台": {
     "prefix": ["#ifdef", "ifdef"],
     "body": [
-      "// #ifdef ${1|VUE3,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
+      "// #ifdef ${1|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
       "$2",
       "// #endif"
     ],
@@ -206,7 +221,7 @@
   "uni-app 条件编译，排除某平台": {
     "prefix": ["#ifndef", "ifndef"],
     "body": [
-      "// #ifndef ${1|VUE3,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
+      "// #ifndef ${1|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
       "$2",
       "// #endif"
     ],
@@ -864,12 +879,12 @@
       "\tfail: (error) => {$2}",
       "})$0"
     ],
-    "description": "uni-app 异步获取系统信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/info?id=getsysteminfo>。"
+    "description": "已过时，推荐使用 uni.getDeviceInfo、uni.getWindowInfo、uni.getAppBaseInfo 代替。uni-app 异步获取系统信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getinfo>。"
   },
   "uni-app 同步获取系统信息": {
     "prefix": ["uni.getSystemInfoSync"],
     "body": ["uni.getSystemInfoSync()$0"],
-    "description": "uni-app 同步获取系统信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/info?id=getsysteminfosync>。"
+    "description": "已过时，推荐使用 uni.getDeviceInfo、uni.getWindowInfo、uni.getAppBaseInfo 代替。uni-app 同步获取系统信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getinfo>。"
   },
   "uni-app 判断 API、回调、参数、组件等是否在当前版本可用": {
     "prefix": ["uni.canIUse"],
@@ -1833,16 +1848,14 @@
     "description": "uni-app 检查登录状态。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login?id=unichecksession>。"
   },
   "uni-app 获取用户信息": {
-    "prefix": ["uni.getUserInfo"],
+    "prefix": ["uni.getUserProfile"],
     "body": [
-      "uni.getUserInfo({",
-      "\tprovider: $1,",
-      "\twithCredentials: ${2|true,false|},",
-      "\tsuccess: ({ userInfo, rawData, signature, encryptedData, iv, errMsg }) => {$3},",
-      "\tfail: (error) => {$4}",
+      "uni.getUserProfile({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
       "})$0"
     ],
-    "description": "uni-app 检查登录状态。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login?id=unichecksession>。"
+    "description": "uni-app getUserProfile。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getUserProfile.html>。"
   },
   "uni-app 分享": {
     "prefix": ["uni.share"],
@@ -2109,5 +2122,435 @@
     "prefix": ["uni.offWifiConnectedWithPartialInfo"],
     "body": ["uni.offWifiConnectedWithPartialInfo($1)$0"],
     "description": "uni-app 移除监听连接 WiFi（信息更少）。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
+  },
+  "uni-app 获取启动时的参数": {
+    "prefix": ["uni.getLaunchOptionsSync"],
+    "body": [
+      "uni.getLaunchOptionsSync({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getLaunchOptionsSync。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getLaunchOptionsSync.html>。"
+  },
+  "uni-app 获取本次启动时的参数": {
+    "prefix": ["uni.getEnterOptionsSync"],
+    "body": [
+      "uni.getEnterOptionsSync({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getEnterOptionsSync。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getEnterOptionsSync.html>。"
+  },
+  "uni-app 日志输出": {
+    "prefix": ["uni.log"],
+    "body": ["uni.log($1)$0"],
+    "description": "uni-app 日志输出。更多信息查看 <https://uniapp.dcloud.net.cn/api/console/log.html>。"
+  },
+  "uni-app 获取设备信息": {
+    "prefix": ["uni.getDeviceInfo"],
+    "body": [
+      "uni.getDeviceInfo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getDeviceInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getDeviceInfo.html>。"
+  },
+  "uni-app 获取窗口信息": {
+    "prefix": ["uni.getWindowInfo"],
+    "body": [
+      "uni.getWindowInfo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getWindowInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getWindowInfo.html>。"
+  },
+  "uni-app 获取 App 基础信息": {
+    "prefix": ["uni.getAppBaseInfo"],
+    "body": [
+      "uni.getAppBaseInfo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getAppBaseInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getAppBaseInfo.html>。"
+  },
+  "uni-app 获取 App 权限设置": {
+    "prefix": ["uni.getAppAuthorizeSetting"],
+    "body": [
+      "uni.getAppAuthorizeSetting({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getAppAuthorizeSetting。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getAppAuthorizeSetting.html>。"
+  },
+  "uni-app 获取系统设置": {
+    "prefix": ["uni.getSystemSetting"],
+    "body": [
+      "uni.getSystemSetting({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getSystemSetting。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getSystemSetting.html>。"
+  },
+  "uni-app 打开 App 权限设置页": {
+    "prefix": ["uni.openAppAuthorizeSetting"],
+    "body": ["uni.openAppAuthorizeSetting($1)$0"],
+    "description": "uni-app 打开 App 权限设置页。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/openAppAuthorizeSetting.html>。"
+  },
+  "uni-app 创建权限请求监听器": {
+    "prefix": ["uni.createRequestPermissionListener"],
+    "body": ["uni.createRequestPermissionListener($1)$0"],
+    "description": "uni-app 创建权限请求监听器。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/createRequestPermissionListener.html>。"
+  },
+  "uni-app 选择媒体文件": {
+    "prefix": ["uni.chooseMedia"],
+    "body": [
+      "uni.chooseMedia({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app chooseMedia。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video/chooseMedia.html>。"
+  },
+  "uni-app 获取视频信息": {
+    "prefix": ["uni.getVideoInfo"],
+    "body": [
+      "uni.getVideoInfo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getVideoInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video/getVideoInfo.html>。"
+  },
+  "uni-app 压缩视频": {
+    "prefix": ["uni.compressVideo"],
+    "body": [
+      "uni.compressVideo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app compressVideo。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video/compressVideo.html>。"
+  },
+  "uni-app 打开视频编辑器": {
+    "prefix": ["uni.openVideoEditor"],
+    "body": [
+      "uni.openVideoEditor({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app openVideoEditor。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video/openVideoEditor.html>。"
+  },
+  "uni-app 创建媒体容器": {
+    "prefix": ["uni.createMediaContainer"],
+    "body": ["uni.createMediaContainer($1)$0"],
+    "description": "uni-app 创建媒体容器。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/createMediaContainer.html>。"
+  },
+  "uni-app 关闭图片预览": {
+    "prefix": ["uni.closePreviewImage"],
+    "body": ["uni.closePreviewImage($1)$0"],
+    "description": "uni-app 关闭图片预览。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/image/previewImage.html>。"
+  },
+  "uni-app 监听实时地理位置变化": {
+    "prefix": ["uni.onLocationChange"],
+    "body": ["uni.onLocationChange($1)$0"],
+    "description": "uni-app 监听实时地理位置变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。"
+  },
+  "uni-app 移除实时地理位置变化监听": {
+    "prefix": ["uni.offLocationChange"],
+    "body": ["uni.offLocationChange($1)$0"],
+    "description": "uni-app 移除实时地理位置变化监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。"
+  },
+  "uni-app 监听地理位置变化错误": {
+    "prefix": ["uni.onLocationChangeError"],
+    "body": ["uni.onLocationChangeError($1)$0"],
+    "description": "uni-app 监听地理位置变化错误。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。"
+  },
+  "uni-app 移除地理位置变化错误监听": {
+    "prefix": ["uni.offLocationChangeError"],
+    "body": ["uni.offLocationChangeError($1)$0"],
+    "description": "uni-app 移除地理位置变化错误监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。"
+  },
+  "uni-app 开启小程序进入前台时接收位置消息": {
+    "prefix": ["uni.startLocationUpdate"],
+    "body": [
+      "uni.startLocationUpdate({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app startLocationUpdate。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。"
+  },
+  "uni-app 关闭小程序进入前台时接收位置消息": {
+    "prefix": ["uni.stopLocationUpdate"],
+    "body": [
+      "uni.stopLocationUpdate({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app stopLocationUpdate。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。"
+  },
+  "uni-app 开启小程序切后台时接收位置消息": {
+    "prefix": ["uni.startLocationUpdateBackground"],
+    "body": [
+      "uni.startLocationUpdateBackground({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app startLocationUpdateBackground。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。"
+  },
+  "uni-app 获取文件管理器": {
+    "prefix": ["uni.getFileSystemManager"],
+    "body": ["uni.getFileSystemManager($1)$0"],
+    "description": "uni-app 获取全局唯一的文件管理器。更多信息查看 <https://uniapp.dcloud.net.cn/api/file/fs.html>。"
+  },
+  "uni-app 创建并返回一个 IntersectionObserver 对象": {
+    "prefix": ["uni.createIntersectionObserver"],
+    "body": ["uni.createIntersectionObserver($1)$0"],
+    "description": "uni-app 创建并返回一个 IntersectionObserver 对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/observer/intersectionObserver.html>。"
+  },
+  "uni-app 创建 MediaQueryObserver 对象": {
+    "prefix": ["uni.createMediaQueryObserver"],
+    "body": ["uni.createMediaQueryObserver($1)$0"],
+    "description": "uni-app 创建 MediaQueryObserver 对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/observer/mediaQueryObserver.html>。"
+  },
+  "uni-app 获取当前语言": {
+    "prefix": ["uni.getLocale"],
+    "body": ["uni.getLocale($1)$0"],
+    "description": "uni-app 获取当前语言。更多信息查看 <https://uniapp.dcloud.net.cn/api/locale/getLocale.html>。"
+  },
+  "uni-app 设置当前语言": {
+    "prefix": ["uni.setLocale"],
+    "body": ["uni.setLocale($1)$0"],
+    "description": "uni-app 设置当前语言。更多信息查看 <https://uniapp.dcloud.net.cn/api/locale/setLocale.html>。"
+  },
+  "uni-app 监听语言变化": {
+    "prefix": ["uni.onLocaleChange"],
+    "body": ["uni.onLocaleChange($1)$0"],
+    "description": "uni-app 监听语言变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/locale/onLocaleChange.html>。"
+  },
+  "uni-app rpx 转 px": {
+    "prefix": ["uni.rpx2px"],
+    "body": ["uni.rpx2px($1)$0"],
+    "description": "uni-app rpx 转 px。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/rpx2px.html>。"
+  },
+  "uni-app 预加载页面": {
+    "prefix": ["uni.preloadPage"],
+    "body": ["uni.preloadPage($1)$0"],
+    "description": "uni-app 预加载页面。更多信息查看 <https://uniapp.dcloud.net.cn/api/preload-page.html>。"
+  },
+  "uni-app 配置 mTLS": {
+    "prefix": ["uni.configMTLS"],
+    "body": [
+      "uni.configMTLS({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app configMTLS。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/configMTLS.html>。"
+  },
+  "uni-app 开始搜索局域网内 mDNS 服务": {
+    "prefix": ["uni.startLocalServiceDiscovery"],
+    "body": [
+      "uni.startLocalServiceDiscovery({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app startLocalServiceDiscovery。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 停止搜索局域网内 mDNS 服务": {
+    "prefix": ["uni.stopLocalServiceDiscovery"],
+    "body": [
+      "uni.stopLocalServiceDiscovery({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app stopLocalServiceDiscovery。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 监听发现 mDNS 服务": {
+    "prefix": ["uni.onLocalServiceFound"],
+    "body": ["uni.onLocalServiceFound($1)$0"],
+    "description": "uni-app 监听发现 mDNS 服务。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 监听 mDNS 服务离开": {
+    "prefix": ["uni.onLocalServiceLost"],
+    "body": ["uni.onLocalServiceLost($1)$0"],
+    "description": "uni-app 监听 mDNS 服务离开。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 监听 mDNS 服务发现停止": {
+    "prefix": ["uni.onLocalServiceDiscoveryStop"],
+    "body": ["uni.onLocalServiceDiscoveryStop($1)$0"],
+    "description": "uni-app 监听 mDNS 服务发现停止。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 移除发现 mDNS 服务监听": {
+    "prefix": ["uni.offLocalServiceFound"],
+    "body": ["uni.offLocalServiceFound($1)$0"],
+    "description": "uni-app 移除发现 mDNS 服务监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 移除 mDNS 服务离开监听": {
+    "prefix": ["uni.offLocalServiceLost"],
+    "body": ["uni.offLocalServiceLost($1)$0"],
+    "description": "uni-app 移除 mDNS 服务离开监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 移除 mDNS 服务发现停止监听": {
+    "prefix": ["uni.offLocalServiceDiscoveryStop"],
+    "body": ["uni.offLocalServiceDiscoveryStop($1)$0"],
+    "description": "uni-app 移除 mDNS 服务发现停止监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/mDNS.html>。"
+  },
+  "uni-app 创建 UDP Socket 实例": {
+    "prefix": ["uni.createUDPSocket"],
+    "body": ["uni.createUDPSocket($1)$0"],
+    "description": "uni-app 创建 UDP Socket 实例。更多信息查看 <https://uniapp.dcloud.net.cn/api/network/udp-socket.html>。"
+  },
+  "uni-app 系统分享": {
+    "prefix": ["uni.shareWithSystem"],
+    "body": [
+      "uni.shareWithSystem({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app shareWithSystem。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/shareWithSystem.html>。"
+  },
+  "uni-app 虚拟支付": {
+    "prefix": ["uni.requestVirtualPayment"],
+    "body": [
+      "uni.requestVirtualPayment({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app requestVirtualPayment。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/requestVirtualPayment.html>。"
+  },
+  "uni-app 商家转账": {
+    "prefix": ["uni.requestMerchantTransfer"],
+    "body": [
+      "uni.requestMerchantTransfer({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app requestMerchantTransfer。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/requestMerchantTransfer.html>。"
+  },
+  "uni-app 获取推送标识": {
+    "prefix": ["uni.getPushClientId"],
+    "body": [
+      "uni.getPushClientId({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getPushClientId。更多信息查看 <https://uniapp.dcloud.net.cn/api/push/getPushClientId.html>。"
+  },
+  "uni-app 监听推送消息": {
+    "prefix": ["uni.onPushMessage"],
+    "body": ["uni.onPushMessage($1)$0"],
+    "description": "uni-app 监听推送消息。更多信息查看 <https://uniapp.dcloud.net.cn/api/push/onPushMessage.html>。"
+  },
+  "uni-app 移除推送消息监听": {
+    "prefix": ["uni.offPushMessage"],
+    "body": ["uni.offPushMessage($1)$0"],
+    "description": "uni-app 移除推送消息监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/push/onPushMessage.html>。"
+  },
+  "uni-app 获取通道管理器": {
+    "prefix": ["uni.getChannelManager"],
+    "body": ["uni.getChannelManager($1)$0"],
+    "description": "uni-app 获取通道管理器。更多信息查看 <https://uniapp.dcloud.net.cn/api/push/getChannelManager.html>。"
+  },
+  "uni-app 创建本地推送消息": {
+    "prefix": ["uni.createPushMessage"],
+    "body": [
+      "uni.createPushMessage({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app createPushMessage。更多信息查看 <https://uniapp.dcloud.net.cn/api/push/createPushMessage.html>。"
+  },
+  "uni-app 获取面部识别 MetaInfo": {
+    "prefix": ["uni.getFacialRecognitionMetaInfo"],
+    "body": [
+      "uni.getFacialRecognitionMetaInfo({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getFacialRecognitionMetaInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/facialRecognition.html>。"
+  },
+  "uni-app 开始人脸识别": {
+    "prefix": ["uni.startFacialRecognitionVerify"],
+    "body": [
+      "uni.startFacialRecognitionVerify({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app startFacialRecognitionVerify。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/facialRecognition.html>。"
+  },
+  "uni-app 预登录": {
+    "prefix": ["uni.preLogin"],
+    "body": [
+      "uni.preLogin({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app preLogin。更多信息查看 <https://uniapp.dcloud.net.cn/api/univerify/preLogin.html>。"
+  },
+  "uni-app 关闭认证页面": {
+    "prefix": ["uni.closeAuthView"],
+    "body": ["uni.closeAuthView($1)$0"],
+    "description": "uni-app 关闭认证页面。更多信息查看 <https://uniapp.dcloud.net.cn/api/univerify/closeAuthView.html>。"
+  },
+  "uni-app 获取一键登录勾选框状态": {
+    "prefix": ["uni.getCheckBoxState"],
+    "body": [
+      "uni.getCheckBoxState({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getCheckBoxState。更多信息查看 <https://uniapp.dcloud.net.cn/api/univerify/getCheckBoxState.html>。"
+  },
+  "uni-app 获取 UniverifyManager": {
+    "prefix": ["uni.getUniverifyManager"],
+    "body": ["uni.getUniverifyManager($1)$0"],
+    "description": "uni-app 获取 UniverifyManager。更多信息查看 <https://uniapp.dcloud.net.cn/api/univerify/getUniverifyManager.html>。"
+  },
+  "uni-app 引用原生插件": {
+    "prefix": ["uni.requireNativePlugin"],
+    "body": ["uni.requireNativePlugin($1)$0"],
+    "description": "uni-app 引用原生插件。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/requireNativePlugin.html>。"
+  },
+  "uni-app 获取第三方平台配置": {
+    "prefix": ["uni.getExtConfig"],
+    "body": [
+      "uni.getExtConfig({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app getExtConfig。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/getExtConfig.html>。"
+  },
+  "uni-app 获取第三方平台配置（同步）": {
+    "prefix": ["uni.getExtConfigSync"],
+    "body": ["uni.getExtConfigSync($1)$0"],
+    "description": "uni-app 获取第三方平台配置（同步）。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/getExtConfig.html>。"
+  },
+  "uni-app 创建 webview 上下文": {
+    "prefix": ["uni.createWebviewContext"],
+    "body": ["uni.createWebviewContext($1)$0"],
+    "description": "uni-app 创建 webview 上下文。更多信息查看 <https://uniapp.dcloud.net.cn/api/window/webview.html>。"
   }
 }
