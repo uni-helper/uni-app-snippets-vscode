@@ -1,5 +1,9 @@
 # 改动日志
 
+## 0.11.0 (2026-05-08)
+
+- feat: 增加 snippets
+
 ## 0.10.5 (2024-08-07)
 
 - feat: 添加 pages.json 添加编译提示，感谢 [wtto00](https://github.com/wtto00) 在 [#19](https://github.com/uni-helper/uni-app-snippets-vscode/pull/19) 的贡献
