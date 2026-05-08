@@ -10,7 +10,12 @@
     "description": "uni-app UNI-APP-X 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app uniVersion 平台": {
-    "prefix": ["platform-uni-version", "platform-uniVersion", "uni-version", "uniVersion"],
+    "prefix": [
+      "platform-uni-version",
+      "platform-uniVersion",
+      "uni-version",
+      "uniVersion"
+    ],
     "body": ["uniVersion"],
     "description": "uni-app uniVersion 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -130,7 +135,12 @@
     "description": "uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 快手小程序平台": {
-    "prefix": ["platform-mp-kuaishou", "mp-kuaishou", "platform-kuaishou", "kuaishou"],
+    "prefix": [
+      "platform-mp-kuaishou",
+      "mp-kuaishou",
+      "platform-kuaishou",
+      "kuaishou"
+    ],
     "body": ["MP-KUAISHOU"],
     "description": "uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -155,7 +165,12 @@
     "description": "uni-app 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 快应用通用平台": {
-    "prefix": ["platform-quickapp", "quickapp", "platform-quickapp-webview", "quickapp-webview"],
+    "prefix": [
+      "platform-quickapp",
+      "quickapp",
+      "platform-quickapp-webview",
+      "quickapp-webview"
+    ],
     "body": ["QUICKAPP-WEBVIEW"],
     "description": "uni-app 快应用通用对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -279,7 +294,13 @@
   },
   "uni-app icon": {
     "prefix": ["icon", "<icon>"],
-    "body": ["<icon", "\ttype=\"$1\"", "\t:size=\"${2:23}\"", "\tcolor=\"$3\"", "/>$0"],
+    "body": [
+      "<icon",
+      "\ttype=\"$1\"",
+      "\t:size=\"${2:23}\"",
+      "\tcolor=\"$3\"",
+      "/>$0"
+    ],
     "description": "uni-app 图标。更多信息查看 <https://uniapp.dcloud.io/component/icon>。"
   },
   "uni-app text": {
@@ -558,7 +579,13 @@
   },
   "uni-app live-player": {
     "prefix": ["live-player", "<live-player>"],
-    "body": ["<live-player", "\tid=\"$1\"", "\tsrc=\"$2\"", "\t${3:autoplay}", "/>$0"],
+    "body": [
+      "<live-player",
+      "\tid=\"$1\"",
+      "\tsrc=\"$2\"",
+      "\t${3:autoplay}",
+      "/>$0"
+    ],
     "description": "uni-app 直播拉流组件。更多信息查看 <https://uniapp.dcloud.io/component/live-player>。"
   },
   "uni-app live-pusher": {
@@ -568,7 +595,13 @@
   },
   "uni-app map": {
     "prefix": ["map", "<map>"],
-    "body": ["<map", "\tlongitude=\"$1\"", "\tlatitude=\"$2\"", "\tmarkers=\"$3\"", "/>$0"],
+    "body": [
+      "<map",
+      "\tlongitude=\"$1\"",
+      "\tlatitude=\"$2\"",
+      "\tmarkers=\"$3\"",
+      "/>$0"
+    ],
     "description": "uni-app 地图组件。更多信息查看 <https://uniapp.dcloud.io/component/map>。"
   },
   "uni-app canvas": {

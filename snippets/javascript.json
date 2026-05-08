@@ -10,7 +10,12 @@
     "description": "uni-app UNI-APP-X 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app uniVersion 平台": {
-    "prefix": ["platform-uni-version", "platform-uniVersion", "uni-version", "uniVersion"],
+    "prefix": [
+      "platform-uni-version",
+      "platform-uniVersion",
+      "uni-version",
+      "uniVersion"
+    ],
     "body": ["uniVersion"],
     "description": "uni-app uniVersion 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -130,7 +135,12 @@
     "description": "uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 快手小程序平台": {
-    "prefix": ["platform-mp-kuaishou", "mp-kuaishou", "platform-kuaishou", "kuaishou"],
+    "prefix": [
+      "platform-mp-kuaishou",
+      "mp-kuaishou",
+      "platform-kuaishou",
+      "kuaishou"
+    ],
     "body": ["MP-KUAISHOU"],
     "description": "uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -155,7 +165,12 @@
     "description": "uni-app 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 快应用通用平台": {
-    "prefix": ["platform-quickapp", "quickapp", "platform-quickapp-webview", "quickapp-webview"],
+    "prefix": [
+      "platform-quickapp",
+      "quickapp",
+      "platform-quickapp-webview",
+      "quickapp-webview"
+    ],
     "body": ["QUICKAPP-WEBVIEW"],
     "description": "uni-app 快应用通用对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -1086,7 +1101,12 @@
   },
   "uni-app 使手机振动": {
     "prefix": ["uni.vibrate"],
-    "body": ["uni.vibrate({", "\tsuccess: (result) => {$1},", "\tfail: (error) => {$2}", "})$0"],
+    "body": [
+      "uni.vibrate({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
     "description": "uni-app 使手机振动。更多信息查看 <https://uniapp.dcloud.io/api/system/vibrate?id=vibrate>。"
   },
   "uni-app 使手机长振动": {
@@ -1157,7 +1177,9 @@
   },
   "uni-app 监听蓝牙适配器状态变化": {
     "prefix": ["uni.onBluetoothAdapterStateChange"],
-    "body": ["uni.onBluetoothAdapterStateChange(({ available, discovering }) => {$1})$0"],
+    "body": [
+      "uni.onBluetoothAdapterStateChange(({ available, discovering }) => {$1})$0"
+    ],
     "description": "uni-app 监听蓝牙适配器状态变化。更多信息查看 <https://uniapp.dcloud.io/api/system/bluetooth>。"
   },
   "uni-app 根据 uuid 获取已经连接的蓝牙设备": {
@@ -1242,7 +1264,9 @@
   },
   "uni-app 监听低功耗蓝牙连接状态改变": {
     "prefix": ["uni.onBLEConnectionStateChange"],
-    "body": ["uni.onBLEConnectionStateChange(({ deviceId, connected }) => {$1})$0"],
+    "body": [
+      "uni.onBLEConnectionStateChange(({ deviceId, connected }) => {$1})$0"
+    ],
     "description": "uni-app 监听低功耗蓝牙连接状态改变。更多信息查看 <https://uniapp.dcloud.io/api/system/ble>。"
   },
   "uni-app 监听低功耗蓝牙设备特征值变化": {
@@ -1329,7 +1353,9 @@
   },
   "uni-app 监听 iBeacon 服务状态变化": {
     "prefix": ["uni.onBeaconServiceChange"],
-    "body": ["uni.onBeaconServiceChange(({ available, discovering }) => {$1})$0"],
+    "body": [
+      "uni.onBeaconServiceChange(({ available, discovering }) => {$1})$0"
+    ],
     "description": "uni-app 监听 iBeacon 服务状态变化。更多信息查看 <https://uniapp.dcloud.io/api/system/ibeacon>。"
   },
   "uni-app 监听 iBeacon 设备更新": {
@@ -1445,7 +1471,12 @@
   },
   "uni-app 显示加载中提示框": {
     "prefix": ["uni.showLoading"],
-    "body": ["uni.showLoading({", "\ttitle: '${1:加载中}',", "\tmask: ${2:true}", "})$0"],
+    "body": [
+      "uni.showLoading({",
+      "\ttitle: '${1:加载中}',",
+      "\tmask: ${2:true}",
+      "})$0"
+    ],
     "description": "uni-app 显示加载中提示框。这可能与消息提示框冲突，请在测试时以真机测试为准。更多信息查看 <https://uniapp.dcloud.io/api/ui/prompt?id=showloading>。"
   },
   "uni-app 隐藏加载中提示框": {
@@ -2001,12 +2032,22 @@
   },
   "uni-app 初始化 WiFi 模块": {
     "prefix": ["uni.startWifi"],
-    "body": ["uni.startWifi({", "\tsuccess: (result) => {$1},", "\tfail: (error) => {$2}", "})$0"],
+    "body": [
+      "uni.startWifi({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
     "description": "uni-app 初始化 WiFi 模块。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
   },
   "uni-app 关闭 WiFi 模块": {
     "prefix": ["uni.stopWifi"],
-    "body": ["uni.stopWifi({", "\tsuccess: (result) => {$1},", "\tfail: (error) => {$2}", "})$0"],
+    "body": [
+      "uni.stopWifi({",
+      "\tsuccess: (result) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
     "description": "uni-app 关闭 WiFi 模块。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。"
   },
   "uni-app 连接 WiFi": {

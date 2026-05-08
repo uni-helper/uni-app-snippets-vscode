@@ -1,23 +1,25 @@
-import { readFileSync, writeFileSync } from 'node:fs';
-import { resolve, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { simpleGit } from 'simple-git';
+import { readFileSync, writeFileSync } from "node:fs";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { simpleGit } from "simple-git";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const root = resolve(__dirname, '..');
-const readmePath = resolve(root, 'README.md');
+const root = resolve(__dirname, "..");
+const readmePath = resolve(root, "README.md");
 
 const htmlObject = JSON.parse(
-  readFileSync(resolve(root, 'snippets', 'vue-html.json'), { encoding: 'utf8' }),
+  readFileSync(resolve(root, "snippets", "vue-html.json"), { encoding: "utf8" })
 );
 const cssObject = JSON.parse(
-  readFileSync(resolve(root, 'snippets', 'css.json'), { encoding: 'utf8' }),
+  readFileSync(resolve(root, "snippets", "css.json"), { encoding: "utf8" })
 );
 const jsoncObject = JSON.parse(
-  readFileSync(resolve(root, 'snippets', 'jsonc.json'), { encoding: 'utf8' }),
+  readFileSync(resolve(root, "snippets", "jsonc.json"), { encoding: "utf8" })
 );
 const javascriptObject = JSON.parse(
-  readFileSync(resolve(root, 'snippets', 'javascript.json'), { encoding: 'utf8' }),
+  readFileSync(resolve(root, "snippets", "javascript.json"), {
+    encoding: "utf8",
+  })
 );
 
 let readme = `# @uni-helper/uni-app-snippets-vscode
@@ -51,123 +53,123 @@ let readme = `# @uni-helper/uni-app-snippets-vscode
 `;
 
 // 添加 HTML
-readme += '## HTML\n\n';
-readme += '|API|Prefix|Description|\n|-|-|-|\n';
+readme += "## HTML\n\n";
+readme += "|API|Prefix|Description|\n|-|-|-|\n";
 for (const key of Object.keys(htmlObject)) {
   const { prefix, body, description } = htmlObject[key];
-  let newPrefix = '';
+  let newPrefix = "";
   for (const text of prefix) {
     newPrefix += `\`${text}\`, `;
   }
   newPrefix = newPrefix.slice(0, -2);
-  let newBody = '';
+  let newBody = "";
   newBody = `\`${body[0]
-    .replaceAll(/\b .*[/>]/g, '')
-    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, '()')
-    .replaceAll(/\$\d[\w/<>-]*/g, '')}`;
-  if (newBody.includes('/* ') && !newBody.includes(' */')) {
-    newBody += ' */`';
-  } else if (newBody.includes('<!-- ') && !newBody.includes(' -->')) {
-    newBody += ' -->`';
-  } else if (newBody.includes('<') && !newBody.includes('>')) {
-    newBody += '>`';
+    .replaceAll(/\b .*[/>]/g, "")
+    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, "()")
+    .replaceAll(/\$\d[\w/<>-]*/g, "")}`;
+  if (newBody.includes("/* ") && !newBody.includes(" */")) {
+    newBody += " */`";
+  } else if (newBody.includes("<!-- ") && !newBody.includes(" -->")) {
+    newBody += " -->`";
+  } else if (newBody.includes("<") && !newBody.includes(">")) {
+    newBody += ">`";
   } else {
-    newBody += '`';
+    newBody += "`";
   }
   readme += `|${newBody}|${newPrefix}|${description}|\n`;
 }
-readme += '\n';
+readme += "\n";
 
 // 添加 CSS/LESS/SCSS/SASS/STYLUS
-readme += '## CSS/LESS/SCSS/SASS/STYLUS\n\n';
-readme += '|API|Prefix|Description|\n|-|-|-|\n';
+readme += "## CSS/LESS/SCSS/SASS/STYLUS\n\n";
+readme += "|API|Prefix|Description|\n|-|-|-|\n";
 for (const key of Object.keys(cssObject)) {
   const { prefix, body, description } = cssObject[key];
-  let newPrefix = '';
+  let newPrefix = "";
   for (const text of prefix) {
     newPrefix += `\`${text}\`, `;
   }
   newPrefix = newPrefix.slice(0, -2);
-  let newBody = '';
+  let newBody = "";
   newBody = `\`${body[0]
-    .replaceAll(/\b .*[/>]/g, '')
-    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, '()')
-    .replaceAll(/\$\d[\w/<>-]*/g, '')}`;
-  if (newBody.includes('/* ') && !newBody.includes(' */')) {
-    newBody += ' */`';
-  } else if (newBody.includes('<!-- ') && !newBody.includes(' -->')) {
-    newBody += ' -->`';
-  } else if (newBody.includes('<') && !newBody.includes('>')) {
-    newBody += '>`';
+    .replaceAll(/\b .*[/>]/g, "")
+    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, "()")
+    .replaceAll(/\$\d[\w/<>-]*/g, "")}`;
+  if (newBody.includes("/* ") && !newBody.includes(" */")) {
+    newBody += " */`";
+  } else if (newBody.includes("<!-- ") && !newBody.includes(" -->")) {
+    newBody += " -->`";
+  } else if (newBody.includes("<") && !newBody.includes(">")) {
+    newBody += ">`";
   } else {
-    newBody += '`';
+    newBody += "`";
   }
   readme += `|${newBody}|${newPrefix}|${description}|\n`;
 }
-readme += '\n';
+readme += "\n";
 
 // 添加 JSONC
-readme += '## JSON With Comments (`pages.json`)\n\n';
+readme += "## JSON With Comments (`pages.json`)\n\n";
 readme +=
-  '请参考 [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) 和 [Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers) 调整你的 VS Code 设置，将 `pages.json` 视为 JSONC 文件，否则 VS Code 会报错。下面是一个修改 `settings.json` 的例子。\n\n';
-readme += '```jsonc\n';
-readme += '{\n';
+  "请参考 [User and Workspace Settings](https://code.visualstudio.com/docs/getstarted/settings) 和 [Language Identifiers](https://code.visualstudio.com/docs/languages/identifiers) 调整你的 VS Code 设置，将 `pages.json` 视为 JSONC 文件，否则 VS Code 会报错。下面是一个修改 `settings.json` 的例子。\n\n";
+readme += "```jsonc\n";
+readme += "{\n";
 readme += '  "files.associations": {\n';
 readme += '    "pages.json": "jsonc"\n';
-readme += '  }\n';
-readme += '}\n';
-readme += '```\n\n';
-readme += '|API|Prefix|Description|\n|-|-|-|\n';
+readme += "  }\n";
+readme += "}\n";
+readme += "```\n\n";
+readme += "|API|Prefix|Description|\n|-|-|-|\n";
 for (const key of Object.keys(jsoncObject)) {
   const { prefix, body, description } = jsoncObject[key];
-  let newPrefix = '';
+  let newPrefix = "";
   for (const text of prefix) {
     newPrefix += `\`${text}\`, `;
   }
   newPrefix = newPrefix.slice(0, -2);
-  let newBody = '';
+  let newBody = "";
   newBody = `\`${body[0]
-    .replaceAll(/\b .*[/>]/g, '')
-    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, '()')
-    .replaceAll(/\$\d[\w/<>-]*/g, '')
-    .replaceAll('|', '\\|')}`;
-  if (newBody.includes('/* ') && !newBody.includes(' */')) {
-    newBody += ' */`';
-  } else if (newBody.includes('<!-- ') && !newBody.includes(' -->')) {
-    newBody += ' -->`';
-  } else if (newBody.includes('<') && !newBody.includes('>')) {
-    newBody += '>`';
+    .replaceAll(/\b .*[/>]/g, "")
+    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, "()")
+    .replaceAll(/\$\d[\w/<>-]*/g, "")
+    .replaceAll("|", "\\|")}`;
+  if (newBody.includes("/* ") && !newBody.includes(" */")) {
+    newBody += " */`";
+  } else if (newBody.includes("<!-- ") && !newBody.includes(" -->")) {
+    newBody += " -->`";
+  } else if (newBody.includes("<") && !newBody.includes(">")) {
+    newBody += ">`";
   } else {
-    newBody += '`';
+    newBody += "`";
   }
   readme += `|${newBody}|${newPrefix}|${description}|\n`;
 }
-readme += '\n';
+readme += "\n";
 
 // 添加 JavaScript/TypeScript
-readme += '## JavaScript/TypeScript\n\n';
-readme += '|API|Prefix|Description|\n|-|-|-|\n';
+readme += "## JavaScript/TypeScript\n\n";
+readme += "|API|Prefix|Description|\n|-|-|-|\n";
 for (const key of Object.keys(javascriptObject)) {
   const { prefix, body, description } = javascriptObject[key];
-  let newPrefix = '';
+  let newPrefix = "";
   for (const text of prefix) {
     newPrefix += `\`${text}\`, `;
   }
   newPrefix = newPrefix.slice(0, -2);
-  let newBody = '';
+  let newBody = "";
   newBody = `\`${body[0]
-    .replaceAll(/\b .*[/>]/g, '')
-    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, '()')
-    .replaceAll(/\$\d[\w/<>-]*/g, '')
-    .replaceAll('|', '\\|')}`;
-  if (newBody.includes('/* ') && !newBody.includes(' */')) {
-    newBody += ' */`';
-  } else if (newBody.includes('<!-- ') && !newBody.includes(' -->')) {
-    newBody += ' -->`';
-  } else if (newBody.includes('<') && !newBody.includes('>')) {
-    newBody += '>`';
+    .replaceAll(/\b .*[/>]/g, "")
+    .replaceAll(/\(?\([\w "$'(),/:=>{|}]+/g, "()")
+    .replaceAll(/\$\d[\w/<>-]*/g, "")
+    .replaceAll("|", "\\|")}`;
+  if (newBody.includes("/* ") && !newBody.includes(" */")) {
+    newBody += " */`";
+  } else if (newBody.includes("<!-- ") && !newBody.includes(" -->")) {
+    newBody += " -->`";
+  } else if (newBody.includes("<") && !newBody.includes(">")) {
+    newBody += ">`";
   } else {
-    newBody += '`';
+    newBody += "`";
   }
   readme += `|${newBody}|${newPrefix}|${description}|\n`;
 }

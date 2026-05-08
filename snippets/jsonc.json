@@ -10,7 +10,12 @@
     "description": "uni-app UNI-APP-X 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app uniVersion 平台": {
-    "prefix": ["platform-uni-version", "platform-uniVersion", "uni-version", "uniVersion"],
+    "prefix": [
+      "platform-uni-version",
+      "platform-uniVersion",
+      "uni-version",
+      "uniVersion"
+    ],
     "body": ["uniVersion"],
     "description": "uni-app uniVersion 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -130,7 +135,12 @@
     "description": "uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 快手小程序平台": {
-    "prefix": ["platform-mp-kuaishou", "mp-kuaishou", "platform-kuaishou", "kuaishou"],
+    "prefix": [
+      "platform-mp-kuaishou",
+      "mp-kuaishou",
+      "platform-kuaishou",
+      "kuaishou"
+    ],
     "body": ["MP-KUAISHOU"],
     "description": "uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
@@ -155,7 +165,12 @@
     "description": "uni-app 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
   "uni-app 快应用通用平台": {
-    "prefix": ["platform-quickapp", "quickapp", "platform-quickapp-webview", "quickapp-webview"],
+    "prefix": [
+      "platform-quickapp",
+      "quickapp",
+      "platform-quickapp-webview",
+      "quickapp-webview"
+    ],
     "body": ["QUICKAPP-WEBVIEW"],
     "description": "uni-app 快应用通用对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.io/tutorial/platform.html>。"
   },
