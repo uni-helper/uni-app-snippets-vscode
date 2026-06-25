@@ -706,5 +706,66 @@
     "prefix": ["refresh", "<refresh>"],
     "body": ["<refresh $1>$2</refresh>$0"],
     "description": "uni-app 【APP-NVUE 专用】列表下拉刷新组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/refresh>。"
+  },
+  "uni-app animation-view": {
+    "prefix": ["animation-view", "<animation-view>"],
+    "body": [
+      "<animation-view",
+      "\tpath=\"$1\"",
+      "\t:loop=\"${2|false,true|}\"",
+      "\tautoplay",
+      "\t@bindended=\"$3\"",
+      "/>$0"
+    ],
+    "description": "uni-app Lottie 动画组件，仅 APP 和百度小程序支持。需安装 animation-view 插件。更多信息查看 <https://uniapp.dcloud.net.cn/component/animation-view>。"
+  },
+  "uni-app official-account": {
+    "prefix": ["official-account", "<official-account>"],
+    "body": ["<official-account $1 />$0"],
+    "description": "uni-app 公众号关注组件，仅微信小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/component/official-account>。"
+  },
+  "uni-app ad-interstitial": {
+    "prefix": ["ad-interstitial", "<ad-interstitial>"],
+    "body": [
+      "<ad-interstitial",
+      "\tadpid=\"$1\"",
+      "\t@load=\"$2\"",
+      "\t@error=\"$3\"",
+      "\t@close=\"$4\"",
+      "/>$0"
+    ],
+    "description": "uni-app 插屏广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/ad-interstitial>。"
+  },
+  "uni-app ad-rewarded-video": {
+    "prefix": ["ad-rewarded-video", "<ad-rewarded-video>"],
+    "body": [
+      "<ad-rewarded-video",
+      "\tadpid=\"$1\"",
+      "\t@load=\"$2\"",
+      "\t@error=\"$3\"",
+      "\t@close=\"$4\"",
+      "/>$0"
+    ],
+    "description": "uni-app 激励视频广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/ad-rewarded-video>。"
+  },
+  "uni-app ad-drama": {
+    "prefix": ["ad-drama", "<ad-drama>"],
+    "body": ["<ad-drama $1 />$0"],
+    "description": "uni-app 短剧广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/uni-ad/ad-drama>。"
+  },
+  "uni-app ad-grid": {
+    "prefix": ["ad-grid", "<ad-grid>"],
+    "body": ["<ad-grid $1 />$0"],
+    "description": "uni-app 格子广告组件，仅微信小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/component/ad-grid>。"
+  },
+  "uni-app ad-video": {
+    "prefix": ["ad-video", "<ad-video>"],
+    "body": ["<ad-video $1 />$0"],
+    "description": "uni-app 视频广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/uni-ad/ad-video>。"
+  },
+  "uni-app ad-video-component": {
+    "prefix": ["ad-video-component", "<ad-video-component>"],
+    "body": ["<ad-video-component $1 />$0"],
+    "description": "uni-app 视频贴片广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/uni-ad/ad-video-component>。"
   }
 }

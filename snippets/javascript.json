@@ -2552,5 +2552,31 @@
     "prefix": ["uni.createWebviewContext"],
     "body": ["uni.createWebviewContext($1)$0"],
     "description": "uni-app 创建 webview 上下文。更多信息查看 <https://uniapp.dcloud.net.cn/api/window/webview.html>。"
+  },
+  "【推荐使用 uni.getUserProfile 代替】uni-app 获取用户信息": {
+    "prefix": ["uni.getUserInfo"],
+    "body": [
+      "uni.getUserInfo({",
+      "\tsuccess: ({ userInfo }) => {$1},",
+      "\tfail: (error) => {$2}",
+      "})$0"
+    ],
+    "description": "uni-app 获取用户信息。推荐使用 uni.getUserProfile 代替。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getUserInfo.html>。"
+  },
+  "uni-app 订阅消息": {
+    "prefix": ["uni.requestSubscribeMessage"],
+    "body": [
+      "uni.requestSubscribeMessage({",
+      "\ttmplIds: ['$1'],",
+      "\tsuccess: (result) => {$2},",
+      "\tfail: (error) => {$3}",
+      "})$0"
+    ],
+    "description": "uni-app 订阅消息。仅微信小程序和支付宝小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/requestSubscribeMessage.html>。"
+  },
+  "uni-app 获取环境信息（同步）": {
+    "prefix": ["uni.getEnvInfoSync"],
+    "body": ["const envInfo = uni.getEnvInfoSync()$0"],
+    "description": "uni-app 获取环境信息（同步）。仅抖音小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/getEnvInfoSync.html>。"
   }
 }
