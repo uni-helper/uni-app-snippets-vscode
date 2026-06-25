@@ -118,6 +118,14 @@
 |`<cell-slot>`|`cell`, `<cell>`|uni-app 【APP-NVUE 专用】列表项组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/recycle-list>。|
 |`<waterfall>`|`waterfall`, `<waterfall>`|uni-app 【APP-NVUE 专用】瀑布流组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/waterfall>。|
 |`<refresh>`|`refresh`, `<refresh>`|uni-app 【APP-NVUE 专用】列表下拉刷新组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/refresh>。|
+|`<animation-view>`|`animation-view`, `<animation-view>`|uni-app Lottie 动画组件，仅 APP 和百度小程序支持。需安装 animation-view 插件。更多信息查看 <https://uniapp.dcloud.net.cn/component/animation-view>。|
+|`<official-account>`|`official-account`, `<official-account>`|uni-app 公众号关注组件，仅微信小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/component/official-account>。|
+|`<ad-interstitial>`|`ad-interstitial`, `<ad-interstitial>`|uni-app 插屏广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/ad-interstitial>。|
+|`<ad-rewarded-video>`|`ad-rewarded-video`, `<ad-rewarded-video>`|uni-app 激励视频广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/component/ad-rewarded-video>。|
+|`<ad-drama>`|`ad-drama`, `<ad-drama>`|uni-app 短剧广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/uni-ad/ad-drama>。|
+|`<ad-grid>`|`ad-grid`, `<ad-grid>`|uni-app 格子广告组件，仅微信小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/component/ad-grid>。|
+|`<ad-video>`|`ad-video`, `<ad-video>`|uni-app 视频广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/uni-ad/ad-video>。|
+|`<ad-video-component>`|`ad-video-component`, `<ad-video-component>`|uni-app 视频贴片广告组件。更多信息查看 <https://uniapp.dcloud.net.cn/uni-ad/ad-video-component>。|
 
 ## CSS/LESS/SCSS/SASS/STYLUS
 
@@ -546,3 +554,6 @@
 |`uni.getExtConfig()`|`uni.getExtConfig`|uni-app getExtConfig。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/getExtConfig.html>。|
 |`uni.getExtConfigSync()`|`uni.getExtConfigSync`|uni-app 获取第三方平台配置（同步）。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/getExtConfig.html>。|
 |`uni.createWebviewContext()`|`uni.createWebviewContext`|uni-app 创建 webview 上下文。更多信息查看 <https://uniapp.dcloud.net.cn/api/window/webview.html>。|
+|`uni.getUserInfo()`|`uni.getUserInfo`|uni-app 获取用户信息。推荐使用 uni.getUserProfile 代替。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getUserInfo.html>。|
+|`uni.requestSubscribeMessage()`|`uni.requestSubscribeMessage`|uni-app 订阅消息。仅微信小程序和支付宝小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/requestSubscribeMessage.html>。|
+|`const envInfo = uni.getEnvInfoSync()`|`uni.getEnvInfoSync`|uni-app 获取环境信息（同步）。仅抖音小程序支持。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/getEnvInfoSync.html>。|
