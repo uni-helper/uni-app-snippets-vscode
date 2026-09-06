@@ -34,6 +34,7 @@
     "uni-helper.png"
   ],
   "scripts": {
+    "check": "ultracite check",
     "fix": "ultracite fix",
     "publish": "conc \"npm:publish:vscode\" \"npm:publish:openvsx\"",
     "publish:openvsx": "ovsx publish",
