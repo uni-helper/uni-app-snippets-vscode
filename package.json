@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/uni-helper/uni-app-snippets-vscode"
+    "url": "git+https://github.com/uni-helper/uni-app-snippets-vscode.git"
   },
   "license": "MIT",
   "author": {
@@ -106,29 +106,42 @@
     ]
   },
   "devDependencies": {
-    "@biomejs/biome": "~2.4.16",
-    "@tsconfig/node24": "^24.0.4",
-    "@types/node": "^24.13.2",
+    "@biomejs/biome": "^2.5.12",
+    "@tsconfig/node26": "^26.0.1",
+    "@types/node": "^26.4.1",
     "@vscode/vsce": "^3.9.2",
-    "bumpp": "^11.1.0",
-    "concurrently": "^10.0.3",
-    "ovsx": "^1.0.2",
-    "tsx": "^4.22.4",
+    "bumpp": "^12.3.0",
+    "concurrently": "^10.0.5",
+    "ovsx": "^1.1.1",
+    "tsx": "^4.23.13",
     "typescript": "^6.0.3",
-    "ultracite": "^7.8.3"
+    "ultracite": "^7.11.0"
   },
-  "packageManager": "npm@11.17.0",
+  "packageManager": "npm@12.0.2",
   "engines": {
     "node": ">=18",
     "vscode": "^1.40.0"
   },
-  "icon": "uni-helper.png",
-  "sponsor": {
-    "url": "https://github.com/ModyQyW/sponsors"
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "26",
+      "onFail": "warn"
+    },
+    "packageManager": {
+      "name": "npm",
+      "version": "12.0.2",
+      "onFail": "warn"
+    }
   },
+  "icon": "uni-helper.png",
   "allowScripts": {
     "@vscode/vsce-sign@2.0.9": true,
     "esbuild@0.28.1": true,
+    "fsevents@2.3.3": true,
     "keytar@7.9.0": true
+  },
+  "sponsor": {
+    "url": "https://github.com/ModyQyW/sponsors"
   }
 }
