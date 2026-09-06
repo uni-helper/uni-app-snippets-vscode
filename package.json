@@ -35,7 +35,6 @@
   ],
   "scripts": {
     "fix": "ultracite fix",
-    "prepare": "is-ci || lefthook install",
     "publish": "conc \"npm:publish:vscode\" \"npm:publish:openvsx\"",
     "publish:openvsx": "ovsx publish",
     "publish:vscode": "vsce package && vsce publish",
@@ -113,10 +112,7 @@
     "@vscode/vsce": "^3.9.2",
     "bumpp": "^11.1.0",
     "concurrently": "^10.0.3",
-    "is-ci": "^4.1.0",
-    "lefthook": "^2.1.9",
     "ovsx": "^1.0.2",
-    "simple-git": "^3.36.0",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3",
     "ultracite": "^7.8.3"
@@ -133,7 +129,6 @@
   "allowScripts": {
     "@vscode/vsce-sign@2.0.9": true,
     "esbuild@0.28.1": true,
-    "lefthook@2.1.9": true,
     "keytar@7.9.0": true
   }
 }

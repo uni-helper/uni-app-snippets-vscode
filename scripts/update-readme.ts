@@ -1,7 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { simpleGit } from "simple-git";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
@@ -175,5 +174,3 @@ for (const key of Object.keys(javascriptObject)) {
 }
 
 writeFileSync(readmePath, readme);
-
-await simpleGit().add(readmePath);
