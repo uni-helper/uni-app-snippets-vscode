@@ -6,7 +6,9 @@
     "moduleResolution": "Bundler",
     "target": "ESNext",
     "resolveJsonModule": true,
-    "types": ["node"]
+    "types": ["node"],
+    "strict": true,
+    "strictNullChecks": true
   },
   "include": [
     "**/*.js",
