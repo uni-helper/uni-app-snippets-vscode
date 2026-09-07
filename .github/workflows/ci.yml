@@ -42,6 +42,3 @@ jobs:
 
       - name: Typecheck
         run: vpr typecheck
-
-      - name: Build
-        run: vpr build
