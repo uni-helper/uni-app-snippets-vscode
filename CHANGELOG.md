@@ -1,5 +1,9 @@
 # 改动日志
 
+## 0.12.0 (2026-09-07)
+
+- feat: 增加 uni-app-x 相关 snippets，移除部分重复 snippets
+
 ## 0.11.2 (2026-06-25)
 
 - feat: 增加 snippets

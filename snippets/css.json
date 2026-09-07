@@ -235,16 +235,16 @@
   "uni-app 系统状态栏高度变量": {
     "prefix": ["--status-bar-height", "var(--status-bar-height)"],
     "body": ["var(--status-bar-height)"],
-    "description": "uni-app 系统状态栏高度变量。更多信息查看 <https://uniapp.dcloud.net.cn/frame?id=css%e5%8f%98%e9%87%8f>。"
+    "description": "uni-app 系统状态栏高度变量。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/syntax-css.html#css-变量>。"
   },
   "uni-app 内容区域距离顶部的距离变量": {
     "prefix": ["--window-top", "var(--window-top)"],
     "body": ["var(--window-top)"],
-    "description": "uni-app 内容区域距离顶部的距离变量。更多信息查看 <https://uniapp.dcloud.net.cn/frame?id=css%e5%8f%98%e9%87%8f>。"
+    "description": "uni-app 内容区域距离顶部的距离变量。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/syntax-css.html#css-变量>。"
   },
   "uni-app 内容区域距离底部的距离变量": {
     "prefix": ["--window-bottom", "var(--window-bottom)"],
     "body": ["var(--window-bottom)"],
-    "description": "uni-app 内容区域距离底部的距离变量。更多信息查看 <https://uniapp.dcloud.net.cn/frame?id=css%e5%8f%98%e9%87%8f>。"
+    "description": "uni-app 内容区域距离底部的距离变量。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/syntax-css.html#css-变量>。"
   }
 }
