@@ -1,12 +1,24 @@
 # @uni-helper/uni-app-snippets-vscode
 
-<!-- ⚠️ 该文件由脚本生成，请勿手动修改 ⚠️ -->
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/uni-helper/uni-app-snippets-vscode@main/logo.png" alt="logo" width="256" height="256" />
+</p>
 
-[![License](https://img.shields.io/github/license/uni-helper/uni-app-snippets-vscode?label=License&color=brightgreen)](https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/LICENSE)
+<p align="center">
+  <a href="https://github.com/uni-helper/uni-app-snippets-vscode/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="GitHub Stars"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/downloads-short/uni-helper.uni-app-snippets-vscode.svg?colorA=005947&colorB=eee&style=for-the-badge" alt="VSCode downloads"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode.svg"><img src="https://vsmarketplacebadges.dev/version-short/uni-helper.uni-app-snippets-vscode.svg?colorA=005947&colorB=eee&style=for-the-badge" alt="VSCode version"></a>
+  <a href="https://open-vsx.org/extension/uni-helper/uni-app-snippets-vscode"><img src="https://img.shields.io/open-vsx/dt/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="OpenVSX downloads"></a>
+  <a href="https://open-vsx.org/extension/uni-helper/uni-app-snippets-vscode"><img src="https://img.shields.io/open-vsx/v/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="OpenVSX version"></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/github/license/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="License"></a>
+</p>
+<p align="center">
+  <a href="https://github.com/ModyQyW"><img src="https://img.shields.io/badge/Author%20%26%20Maintainer-ModyQyW-blue?style=for-the-badge" alt="Author & Maintainer"></a>
+</p>
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/uni-helper.uni-app-snippets-vscode?label=VS%20Marketplace&color=brightgreen)](https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode)
+为 [uni-app](https://uniapp.dcloud.net.cn/) 提供基本能力代码片段。
 
-[![Open VSX Version](https://img.shields.io/open-vsx/v/uni-helper/uni-app-snippets-vscode?label=Open%20VSX&color=brightgreen)](https://open-vsx.org/extension/uni-helper/uni-app-snippets-vscode)
+> **请考虑持续[赞助](https://github.com/ModyQyW/sponsors)以维持该项目的持续健康发展，非常感谢！🙏**
 
 [改动日志](https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/CHANGELOG.md)
 
@@ -19,8 +31,6 @@
 - 参考 [Vue.js 2 风格指南](https://v2.cn.vuejs.org/v2/style-guide/) 和 [Vue.js 3 风格指南](https://cn.vuejs.org/style-guide/)
 
 **插件和文档的冲突之处，请以文档为准。**
-
-插件源代码在 [uni-helper/uni-app-snippets-vscode](https://github.com/uni-helper/uni-app-snippets-vscode)。欢迎提交 ISSUE 和 PR 改进本插件。
 
 ## 使用
 
@@ -578,3 +588,11 @@
 |`uni.getAccessibilityInfo()`|`uni.getAccessibilityInfo`|uni-app x 获取系统无障碍服务是否开启。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/api/get-accessibility-info.html>。|
 |`uni.getPerformance()`|`uni.getPerformance`|uni-app x 获取 performance 性能观测器。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/api/get-performance.html>。|
 |`uni.onTabBarMidButtonTap()`|`uni.onTabBarMidButtonTap`|uni-app x 监听 tabBar 中间按钮（midButton）点击。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/api/on-tab-bar-mid-button-tap.html>。|
+
+## 参与贡献
+
+欢迎通过 Issue 或 Pull Request 参与改进本项目。开始前请阅读 [CONTRIBUTING.md](./CONTRIBUTING.md)，了解项目结构、本地开发流程、测试方式与提交规范。
+
+## 许可证
+
+[MIT](./LICENSE) © 2020-present [uni-helper](https://github.com/uni-helper)
