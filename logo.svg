@@ -1,0 +1,14 @@
+<svg version="1.1" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <title>logo</title>
+  <g
+    fill="none"
+    stroke="#2B9939"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="18"
+  >
+    <polyline points="86,72 30,128 86,184" />
+    <polyline points="170,72 226,128 170,184" />
+    <line x1="146" x2="110" y1="56" y2="200" />
+  </g>
+</svg>
