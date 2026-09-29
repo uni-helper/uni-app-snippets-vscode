@@ -5,10 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/uni-helper/uni-app-snippets-vscode/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/uni-app-snippets-vscode?labelColor=005947&color=eee&style=for-the-badge" alt="GitHub Stars"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/downloads-short/uni-helper.uni-app-snippets-vscode.svg?labelColor=005947&color=eee&style=for-the-badge" alt="VSCode downloads"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/version-short/uni-helper.uni-app-snippets-vscode.svg?labelColor=005947&color=eee&style=for-the-badge" alt="VSCode version"></a>
   <a href="https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/uni-helper/uni-app-snippets-vscode?labelColor=005947&color=eee&style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/uni-helper/uni-app-snippets-vscode/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/uni-app-snippets-vscode?labelColor=005947&color=eee&style=for-the-badge" alt="GitHub Stars"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/version-short/uni-helper.uni-app-snippets-vscode.svg?labelColor=005947&color=eee&style=for-the-badge" alt="VSCode version"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/downloads-short/uni-helper.uni-app-snippets-vscode.svg?labelColor=005947&color=eee&style=for-the-badge" alt="VSCode downloads"></a>
 </p>
 <p align="center">
   <a href="https://github.com/ModyQyW"><img src="https://img.shields.io/badge/Author%20%26%20Maintainer-ModyQyW-blue?style=for-the-badge" alt="Author & Maintainer"></a>
