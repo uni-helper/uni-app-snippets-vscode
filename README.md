@@ -5,12 +5,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/uni-helper/uni-app-snippets-vscode/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="GitHub Stars"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/downloads-short/uni-helper.uni-app-snippets-vscode.svg?colorA=005947&colorB=eee&style=for-the-badge" alt="VSCode downloads"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode.svg"><img src="https://vsmarketplacebadges.dev/version-short/uni-helper.uni-app-snippets-vscode.svg?colorA=005947&colorB=eee&style=for-the-badge" alt="VSCode version"></a>
-  <a href="https://open-vsx.org/extension/uni-helper/uni-app-snippets-vscode"><img src="https://img.shields.io/open-vsx/dt/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="OpenVSX downloads"></a>
-  <a href="https://open-vsx.org/extension/uni-helper/uni-app-snippets-vscode"><img src="https://img.shields.io/open-vsx/v/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="OpenVSX version"></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/github/license/uni-helper/uni-app-snippets-vscode?colorA=005947&colorB=eee&style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/uni-helper/uni-app-snippets-vscode/stargazers"><img src="https://img.shields.io/github/stars/uni-helper/uni-app-snippets-vscode?labelColor=005947&color=eee&style=for-the-badge" alt="GitHub Stars"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/downloads-short/uni-helper.uni-app-snippets-vscode.svg?labelColor=005947&color=eee&style=for-the-badge" alt="VSCode downloads"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=uni-helper.uni-app-snippets-vscode"><img src="https://vsmarketplacebadges.dev/version-short/uni-helper.uni-app-snippets-vscode.svg?labelColor=005947&color=eee&style=for-the-badge" alt="VSCode version"></a>
+  <a href="https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/LICENSE"><img src="https://img.shields.io/github/license/uni-helper/uni-app-snippets-vscode?labelColor=005947&color=eee&style=for-the-badge" alt="License"></a>
 </p>
 <p align="center">
   <a href="https://github.com/ModyQyW"><img src="https://img.shields.io/badge/Author%20%26%20Maintainer-ModyQyW-blue?style=for-the-badge" alt="Author & Maintainer"></a>
@@ -237,8 +235,8 @@
 |`QUICKAPP-WEBVIEW`|`platform-quickapp`, `quickapp`, `platform-quickapp-webview`, `quickapp-webview`|uni-app 快应用通用对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`QUICKAPP-WEBVIEW-UNION`|`platform-quickapp-union`, `quickapp-union`, `platform-quickapp-webview-union`, `quickapp-webview-union`|uni-app 快应用联盟对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`QUICKAPP-WEBVIEW-HUAWEI`|`platform-quickapp-huawei`, `quickapp-huawei`, `platform-quickapp-webview-huawei`, `quickapp-webview-huawei`|uni-app 快应用华为对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`// #ifdef ${1\|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI\|}`|`#ifdef`, `ifdef`|uni-app 条件编译，处理某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`// #ifndef ${1\|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI\|}`|`#ifndef`, `ifndef`|uni-app 条件编译，排除某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`// #ifdef`|`#ifdef`, `ifdef`|uni-app 条件编译，处理某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`// #ifndef`|`#ifndef`, `ifndef`|uni-app 条件编译，排除某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`// #endif`|`#endif`, `endif`|uni-app 结束条件编译。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 
 ## JavaScript/TypeScript
@@ -274,8 +272,8 @@
 |`QUICKAPP-WEBVIEW`|`platform-quickapp`, `quickapp`, `platform-quickapp-webview`, `quickapp-webview`|uni-app 快应用通用对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`QUICKAPP-WEBVIEW-UNION`|`platform-quickapp-union`, `quickapp-union`, `platform-quickapp-webview-union`, `quickapp-webview-union`|uni-app 快应用联盟对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`QUICKAPP-WEBVIEW-HUAWEI`|`platform-quickapp-huawei`, `quickapp-huawei`, `platform-quickapp-webview-huawei`, `quickapp-webview-huawei`|uni-app 快应用华为对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`// #ifdef ${1\|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI\|}`|`#ifdef`, `ifdef`|uni-app 条件编译，处理某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`// #ifndef ${1\|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI\|}`|`#ifndef`, `ifndef`|uni-app 条件编译，排除某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`// #ifdef`|`#ifdef`, `ifdef`|uni-app 条件编译，处理某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`// #ifndef`|`#ifndef`, `ifndef`|uni-app 条件编译，排除某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`// #endif`|`#endif`, `endif`|uni-app 结束条件编译。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`process.env.NODE_ENV === 'development'`|`process.env.NODE_ENV === 'development'`|uni-app 根据 process.env.NODE_ENV 判断是否为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
 |`process.env.NODE_ENV !== 'development'`|`process.env.NODE_ENV !== 'development'`|uni-app 根据 process.env.NODE_ENV 判断是否不为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
@@ -595,4 +593,4 @@
 
 ## 许可证
 
-[MIT](./LICENSE) © 2020-present [uni-helper](https://github.com/uni-helper)
+[MIT](https://github.com/uni-helper/uni-app-snippets-vscode/blob/main/LICENSE) © 2020-present [uni-helper](https://github.com/uni-helper) & Collaborators
