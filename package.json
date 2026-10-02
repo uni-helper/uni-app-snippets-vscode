@@ -23,8 +23,8 @@
   "license": "MIT",
   "author": {
     "name": "ModyQyW",
-    "email": "wurui-dev@foxmail.com",
-    "url": "https://modyqyw.github.io"
+    "email": "wurui.dev@gmail.com",
+    "url": "https://modyqyw.top"
   },
   "publisher": "uni-helper",
   "type": "module",
@@ -106,14 +106,14 @@
     ]
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.14",
+    "@biomejs/biome": "^2.5.15",
     "@vscode/vsce": "^3.9.2",
     "bumpp": "^12.3.0",
     "concurrently": "^10.0.5",
     "ovsx": "^1.2.0",
-    "ultracite": "^7.12.0"
+    "ultracite": "^7.12.2"
   },
-  "packageManager": "npm@12.0.2",
+  "packageManager": "npm@12.2.0",
   "engines": {
     "node": ">=18",
     "vscode": "^1.40.0"
@@ -126,7 +126,7 @@
     },
     "packageManager": {
       "name": "npm",
-      "version": "12.0.2",
+      "version": "12.2.0",
       "onFail": "warn"
     }
   },
