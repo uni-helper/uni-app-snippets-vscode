@@ -36,9 +36,6 @@
   "scripts": {
     "check": "ultracite check",
     "fix": "ultracite fix",
-    "publish": "conc \"npm:publish:vscode\" \"npm:publish:openvsx\"",
-    "publish:openvsx": "ovsx publish",
-    "publish:vscode": "vsce package && vsce publish",
     "release": "bumpp --all"
   },
   "contributes": {
@@ -106,14 +103,12 @@
     ]
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.5.15",
-    "@vscode/vsce": "^3.9.2",
+    "@biomejs/biome": "^2.6.4",
     "bumpp": "^12.3.0",
-    "concurrently": "^10.0.5",
-    "ovsx": "^1.2.0",
-    "ultracite": "^7.12.2"
+    "concurrently": "^10.0.6",
+    "ultracite": "^8.1.0"
   },
-  "packageManager": "npm@12.2.0",
+  "packageManager": "npm@12.2.1",
   "engines": {
     "node": ">=18",
     "vscode": "^1.40.0"
@@ -126,16 +121,11 @@
     },
     "packageManager": {
       "name": "npm",
-      "version": "12.2.0",
+      "version": "12.2.1",
       "onFail": "warn"
     }
   },
   "icon": "logo.png",
-  "allowScripts": {
-    "@vscode/vsce-sign@2.0.9": true,
-    "fsevents@2.3.3": true,
-    "keytar@7.9.0": true
-  },
   "sponsor": {
     "url": "https://github.com/ModyQyW/sponsors"
   }
