@@ -150,7 +150,7 @@
 |`<page-container>`|`page-container`, `<page-container>`|uni-app x 页面容器组件，以弹层形式展示子内容。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/page-container.html>。|
 |`<nested-scroll-header>`|`nested-scroll-header`, `<nested-scroll-header>`|uni-app x 嵌套滚动的固定头部，需与 scroll-view 和 nested-scroll-body 配合使用。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/nested-scroll-header.html>。|
 |`<nested-scroll-body>`|`nested-scroll-body`, `<nested-scroll-body>`|uni-app x 嵌套滚动的可滚动区域，需与 nested-scroll-header 配合使用。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/nested-scroll-body.html>。|
-|`<input>`|`keyboard-accessory`, `<keyboard-accessory>`|uni-app x 【微信小程序专用】键盘上方附件视图，需写在 input 或 textarea 组件内部。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/keyboard-accessory.html>。|
+|`<keyboard-accessory>`|`keyboard-accessory`, `<keyboard-accessory>`|uni-app x 【微信小程序专用】键盘上方附件视图，需写在 input 或 textarea 组件内部。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/keyboard-accessory.html>。|
 
 ## CSS/LESS/SCSS/SASS/STYLUS
 
