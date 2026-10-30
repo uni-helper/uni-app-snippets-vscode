@@ -36,7 +36,8 @@
   "scripts": {
     "check": "ultracite check",
     "fix": "ultracite fix",
-    "release": "bumpp --all"
+    "release": "bumpp --all",
+    "test": "node --test"
   },
   "contributes": {
     "snippets": [

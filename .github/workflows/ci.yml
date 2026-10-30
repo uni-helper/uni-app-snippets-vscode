@@ -39,3 +39,6 @@ jobs:
 
       - name: Check
         run: vpr check
+
+      - name: Test
+        run: vpr test
