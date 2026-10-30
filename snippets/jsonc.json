@@ -67,7 +67,7 @@
   "uni-app H5 平台": {
     "prefix": ["platform-h5", "h5"],
     "body": ["H5"],
-    "description": "uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
+    "description": "推荐使用 WEB。uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
   },
   "uni-app WEB 平台": {
     "prefix": ["platform-web", "web"],
@@ -120,7 +120,7 @@
     "body": ["MP-BAIDU"],
     "description": "uni-app 百度小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
   },
-  "uni-app 字节跳动小程序平台": {
+  "uni-app 抖音小程序平台": {
     "prefix": [
       "platform-mp-toutiao",
       "mp-toutiao",
@@ -132,7 +132,7 @@
       "bytedance"
     ],
     "body": ["MP-TOUTIAO"],
-    "description": "uni-app 字节跳动小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
+    "description": "uni-app 抖音小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。"
   },
   "uni-app 飞书小程序平台": {
     "prefix": ["platform-mp-lark", "mp-lark", "platform-lark", "lark"],
@@ -212,7 +212,7 @@
   "uni-app 条件编译，处理某平台": {
     "prefix": ["#ifdef", "ifdef"],
     "body": [
-      "// #ifdef ${1|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
+      "// #ifdef ${1|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-JD,MP-360,MP-HARMONY,MP-XHS,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
       "$2",
       "// #endif"
     ],
@@ -221,7 +221,7 @@
   "uni-app 条件编译，排除某平台": {
     "prefix": ["#ifndef", "ifndef"],
     "body": [
-      "// #ifndef ${1|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-360,MP-JD,MP-XHS,MP-HARMONY,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
+      "// #ifndef ${1|VUE3,VUE3-VAPOR,VUE2,UNI-APP-X,uniVersion,APP,APP-PLUS,APP-PLUS-NVUE,APP-NVUE,APP-ANDROID,APP-IOS,APP-HARMONY,H5,WEB,MP-WEIXIN,MP-ALIPAY,MP-BAIDU,MP-TOUTIAO,MP-LARK,MP-QQ,MP-KUAISHOU,MP-JD,MP-360,MP-HARMONY,MP-XHS,MP,QUICKAPP-WEBVIEW,QUICKAPP-WEBVIEW-UNION,QUICKAPP-WEBVIEW-HUAWEI|}",
       "$2",
       "// #endif"
     ],

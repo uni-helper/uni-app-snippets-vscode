@@ -50,12 +50,12 @@
 |`APP-ANDROID`|`platform-app-android`, `app-android`|uni-app APP-ANDROID 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`APP-IOS`|`platform-app-ios`, `app-ios`|uni-app APP-IOS 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`APP-HARMONY`|`platform-app-harmony`, `app-harmony`|uni-app APP-HARMONY 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`H5`|`platform-h5`, `h5`|uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`H5`|`platform-h5`, `h5`|推荐使用 WEB。uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`WEB`|`platform-web`, `web`|uni-app WEB 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-WEIXIN`|`platform-mp-weixin`, `mp-weixin`, `platform-weixin`, `weixin`, `platform-mp-wechat`, `mp-wechat`, `platform-wechat`, `wechat`|uni-app 微信小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-ALIPAY`|`platform-mp-alipay`, `mp-alipay`, `platform-alipay`, `alipay`, `platform-mp-ali`, `mp-ali`, `platform-ali`, `ali`, `platform-mp-my`, `mp-my`, `platform-my`, `my`|uni-app 支付宝小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-BAIDU`|`platform-mp-baidu`, `mp-baidu`, `platform-baidu`, `baidu`, `platform-mp-swan`, `mp-swan`, `platform-swan`, `swan`|uni-app 百度小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 字节跳动小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 抖音小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-LARK`|`platform-mp-lark`, `mp-lark`, `platform-lark`, `lark`|uni-app 飞书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-QQ`|`platform-mp-qq`, `mp-qq`, `platform-qq`, `qq`|uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-KUAISHOU`|`platform-mp-kuaishou`, `mp-kuaishou`, `platform-kuaishou`, `kuaishou`|uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
@@ -142,7 +142,7 @@
 |`<sticky-section>`|`sticky-section`, `<sticky-section>`|uni-app x 分组吸顶容器，内部可嵌套 sticky-header。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/sticky-section.html>。|
 |`<sticky-header>`|`sticky-header`, `<sticky-header>`|uni-app x 吸顶组件，需在 scroll-view 的 sticky-section 内使用。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/sticky-header.html>。|
 |`<root-portal>`|`root-portal`, `<root-portal>`|uni-app x 使子节点脱离组件树渲染的容器，常用于弹层。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/root-portal.html>。|
-|`<snapshot>`|`snapshot`, `<snapshot>`|uni-app x【微信小程序专用】截图容器，mode 支持 view 和 picture。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/snapshot.html>。|
+|`<snapshot>`|`snapshot`, `<snapshot>`|uni-app x 【微信小程序专用】截图容器，mode 支持 view 和 picture。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/snapshot.html>。|
 |`<span>`|`span`, `<span>`|uni-app x 文本内联组件，需在 text 组件内使用。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/span.html>。|
 |`<block>`|`block`, `<block>`|uni-app x 无渲染包装组件，仅用于逻辑分块，不渲染实际节点。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/block.html>。|
 |`<loading>`|`loading`, `<loading>`|uni-app x 加载指示器。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/loading.html>。|
@@ -150,7 +150,7 @@
 |`<page-container>`|`page-container`, `<page-container>`|uni-app x 页面容器组件，以弹层形式展示子内容。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/page-container.html>。|
 |`<nested-scroll-header>`|`nested-scroll-header`, `<nested-scroll-header>`|uni-app x 嵌套滚动的固定头部，需与 scroll-view 和 nested-scroll-body 配合使用。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/nested-scroll-header.html>。|
 |`<nested-scroll-body>`|`nested-scroll-body`, `<nested-scroll-body>`|uni-app x 嵌套滚动的可滚动区域，需与 nested-scroll-header 配合使用。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/nested-scroll-body.html>。|
-|`<input>`|`keyboard-accessory`, `<keyboard-accessory>`|uni-app x【微信小程序专用】键盘上方附件视图，需写在 input 或 textarea 组件内部。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/keyboard-accessory.html>。|
+|`<input>`|`keyboard-accessory`, `<keyboard-accessory>`|uni-app x 【微信小程序专用】键盘上方附件视图，需写在 input 或 textarea 组件内部。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/component/keyboard-accessory.html>。|
 
 ## CSS/LESS/SCSS/SASS/STYLUS
 
@@ -173,7 +173,7 @@
 |`MP-WEIXIN`|`platform-mp-weixin`, `mp-weixin`, `platform-weixin`, `weixin`, `platform-mp-wechat`, `mp-wechat`, `platform-wechat`, `wechat`|uni-app 微信小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-ALIPAY`|`platform-mp-alipay`, `mp-alipay`, `platform-alipay`, `alipay`, `platform-mp-ali`, `mp-ali`, `platform-ali`, `ali`, `platform-mp-my`, `mp-my`, `platform-my`, `my`|uni-app 支付宝小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-BAIDU`|`platform-mp-baidu`, `mp-baidu`, `platform-baidu`, `baidu`, `platform-mp-swan`, `mp-swan`, `platform-swan`, `swan`|uni-app 百度小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 字节跳动小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 抖音小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-LARK`|`platform-mp-lark`, `mp-lark`, `platform-lark`, `lark`|uni-app 飞书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-QQ`|`platform-mp-qq`, `mp-qq`, `platform-qq`, `qq`|uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-KUAISHOU`|`platform-mp-kuaishou`, `mp-kuaishou`, `platform-kuaishou`, `kuaishou`|uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
@@ -218,12 +218,12 @@
 |`APP-ANDROID`|`platform-app-android`, `app-android`|uni-app APP-ANDROID 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`APP-IOS`|`platform-app-ios`, `app-ios`|uni-app APP-IOS 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`APP-HARMONY`|`platform-app-harmony`, `app-harmony`|uni-app APP-HARMONY 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`H5`|`platform-h5`, `h5`|uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`H5`|`platform-h5`, `h5`|推荐使用 WEB。uni-app H5 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`WEB`|`platform-web`, `web`|uni-app WEB 对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-WEIXIN`|`platform-mp-weixin`, `mp-weixin`, `platform-weixin`, `weixin`, `platform-mp-wechat`, `mp-wechat`, `platform-wechat`, `wechat`|uni-app 微信小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-ALIPAY`|`platform-mp-alipay`, `mp-alipay`, `platform-alipay`, `alipay`, `platform-mp-ali`, `mp-ali`, `platform-ali`, `ali`, `platform-mp-my`, `mp-my`, `platform-my`, `my`|uni-app 支付宝小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-BAIDU`|`platform-mp-baidu`, `mp-baidu`, `platform-baidu`, `baidu`, `platform-mp-swan`, `mp-swan`, `platform-swan`, `swan`|uni-app 百度小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 字节跳动小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 抖音小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-LARK`|`platform-mp-lark`, `mp-lark`, `platform-lark`, `lark`|uni-app 飞书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-QQ`|`platform-mp-qq`, `mp-qq`, `platform-qq`, `qq`|uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-KUAISHOU`|`platform-mp-kuaishou`, `mp-kuaishou`, `platform-kuaishou`, `kuaishou`|uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
@@ -260,7 +260,7 @@
 |`MP-WEIXIN`|`platform-mp-weixin`, `mp-weixin`, `platform-weixin`, `weixin`, `platform-mp-wechat`, `mp-wechat`, `platform-wechat`, `wechat`|uni-app 微信小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-ALIPAY`|`platform-mp-alipay`, `mp-alipay`, `platform-alipay`, `alipay`, `platform-mp-ali`, `mp-ali`, `platform-ali`, `ali`, `platform-mp-my`, `mp-my`, `platform-my`, `my`|uni-app 支付宝小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-BAIDU`|`platform-mp-baidu`, `mp-baidu`, `platform-baidu`, `baidu`, `platform-mp-swan`, `mp-swan`, `platform-swan`, `swan`|uni-app 百度小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 字节跳动小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
+|`MP-TOUTIAO`|`platform-mp-toutiao`, `mp-toutiao`, `platform-toutiao`, `toutiao`, `platform-mp-bytedance`, `mp-bytedance`, `platform-bytedance`, `bytedance`|uni-app 抖音小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-LARK`|`platform-mp-lark`, `mp-lark`, `platform-lark`, `lark`|uni-app 飞书小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-QQ`|`platform-mp-qq`, `mp-qq`, `platform-qq`, `qq`|uni-app QQ 小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`MP-KUAISHOU`|`platform-mp-kuaishou`, `mp-kuaishou`, `platform-kuaishou`, `kuaishou`|uni-app 快手小程序对应的 %PLATFORM 值。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
@@ -275,16 +275,16 @@
 |`// #ifdef`|`#ifdef`, `ifdef`|uni-app 条件编译，处理某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`// #ifndef`|`#ifndef`, `ifndef`|uni-app 条件编译，排除某平台。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
 |`// #endif`|`#endif`, `endif`|uni-app 结束条件编译。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/platform.html>。|
-|`process.env.NODE_ENV === 'development'`|`process.env.NODE_ENV === 'development'`|uni-app 根据 process.env.NODE_ENV 判断是否为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`process.env.NODE_ENV !== 'development'`|`process.env.NODE_ENV !== 'development'`|uni-app 根据 process.env.NODE_ENV 判断是否不为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`process.env.NODE_ENV === 'production'`|`process.env.NODE_ENV === 'production'`|uni-app 根据 process.env.NODE_ENV 判断是否为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`process.env.NODE_ENV !== 'production'`|`process.env.NODE_ENV !== 'production'`|uni-app 根据 process.env.NODE_ENV 判断是否不为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`import.meta.env.DEV`|`import.meta.env.DEV`|uni-app 根据 import.meta.DEV 判断是否为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`!import.meta.env.DEV`|`!import.meta.env.DEV`|uni-app 根据 import.meta.DEV 判断是否不为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`import.meta.env.PROD`|`import.meta.env.PROD`|uni-app 根据 import.meta.env.PROD 判断是否为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`!import.meta.env.PROD`|`!import.meta.env.PROD`|uni-app 根据 import.meta.env.PROD 判断是否不为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode.html>。|
-|`uni.base64ToArrayBuffer()`|`uni.base64ToArrayBuffer`|uni-app 将 base64 字符串转成 ArrayBuffer。更多信息查看 <https://uniapp.dcloud.net.cn/api/base64ToArrayBuffer.html>。|
-|`uni.arrayBufferToBase64()`|`uni.arrayBufferToBase64`|uni-app 将 ArrayBuffer 字符串转成 base64。更多信息查看 <https://uniapp.dcloud.net.cn/api/arrayBufferToBase64.html>。|
+|`process.env.NODE_ENV === 'development'`|`process.env.NODE_ENV === 'development'`|uni-app 根据 process.env.NODE_ENV 判断是否为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`process.env.NODE_ENV !== 'development'`|`process.env.NODE_ENV !== 'development'`|uni-app 根据 process.env.NODE_ENV 判断是否不为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`process.env.NODE_ENV === 'production'`|`process.env.NODE_ENV === 'production'`|uni-app 根据 process.env.NODE_ENV 判断是否为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`process.env.NODE_ENV !== 'production'`|`process.env.NODE_ENV !== 'production'`|uni-app 根据 process.env.NODE_ENV 判断是否不为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`import.meta.env.DEV`|`import.meta.env.DEV`|uni-app 根据 import.meta.env.DEV 判断是否为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`!import.meta.env.DEV`|`!import.meta.env.DEV`|uni-app 根据 import.meta.env.DEV 判断是否不为开发环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`import.meta.env.PROD`|`import.meta.env.PROD`|uni-app 根据 import.meta.env.PROD 判断是否为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`!import.meta.env.PROD`|`!import.meta.env.PROD`|uni-app 根据 import.meta.env.PROD 判断是否不为生产环境。更多信息查看 <https://cn.vitejs.dev/guide/env-and-mode>。|
+|`uni.base64ToArrayBuffer()`|`uni.base64ToArrayBuffer`|uni-app 将 Base64 字符串转成 ArrayBuffer 对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/base64ToArrayBuffer.html>。|
+|`uni.arrayBufferToBase64()`|`uni.arrayBufferToBase64`|uni-app 将 ArrayBuffer 对象转成 Base64 字符串。更多信息查看 <https://uniapp.dcloud.net.cn/api/arrayBufferToBase64.html>。|
 |`onLaunch()`|`onLaunch`|uni-app 应用生命周期，只能在 App.vue 中监听。uni-app 初始化完成时触发，全局只触发一次。更多信息查看 <https://uniapp.dcloud.net.cn/collocation/App.html#applifecycle>。|
 |`onError()`|`onError`|uni-app 应用生命周期，只能在 App.vue 中监听。uni-app 报错时触发。更多信息查看 <https://uniapp.dcloud.net.cn/collocation/App.html#applifecycle>。|
 |`onUniNViewMessage()`|`onUniNViewMessage`|uni-app 应用生命周期，只能在 App.vue 中监听。监听 nvue 页面发送的数据。更多信息查看 <https://uniapp.dcloud.net.cn/collocation/App.html#applifecycle>。|
@@ -370,15 +370,16 @@
 |`uni.createCameraContext()`|`uni.createCameraContext`|uni-app 创建相机上下文对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/camera-context.html#createcameracontext>。|
 |`uni.createLivePlayerContext()`|`uni.createLivePlayerContext`|uni-app 创建直播拉流上下文对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/live-player-context.html#createliveplayercontext>。|
 |`uni.createLivePusherContext()`|`uni.createLivePusherContext`|uni-app 创建直播推流上下文对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/live-player-context.html#createlivepushercontext>。|
-|`uni.getSystemInfo()`|`uni.getSystemInfo`|已过时，推荐使用 uni.getDeviceInfo、uni.getWindowInfo、uni.getAppBaseInfo 代替。uni-app 异步获取系统信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/info.html>。|
-|`uni.getSystemInfoSync()`|`uni.getSystemInfoSync`|已过时，推荐使用 uni.getDeviceInfo、uni.getWindowInfo、uni.getAppBaseInfo 代替。uni-app 同步获取系统信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/info.html>。|
+|`uni.getSystemInfo()`|`uni.getSystemInfo`|uni-app 异步获取系统信息。已过时，推荐使用 uni.getDeviceInfo、uni.getWindowInfo、uni.getAppBaseInfo 代替。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/info.html>。|
+|`uni.getSystemInfoSync()`|`uni.getSystemInfoSync`|uni-app 同步获取系统信息。已过时，推荐使用 uni.getDeviceInfo、uni.getWindowInfo、uni.getAppBaseInfo 代替。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/info.html>。|
 |`uni.canIUse()`|`uni.canIUse`|uni-app 判断 API、回调、参数、组件等是否在当前版本可用。更多信息查看 <https://uniapp.dcloud.net.cn/api/caniuse.html>。|
 |`uni.onMemoryWarning()`|`uni.onMemoryWarning`|uni-app 监听内存不足告警。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/memory.html>。|
 |`uni.offMemoryWarning()`|`uni.offMemoryWarning`|uni-app 移除监听内存不足告警。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/memory.html>。|
 |`uni.getNetworkType()`|`uni.getNetworkType`|uni-app 获取网络类型。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/network.html#getnetworktype>。|
 |`uni.onNetworkStatusChange()`|`uni.onNetworkStatusChange`|uni-app 监听网络状态变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/network.html#onnetworkstatuschange>。|
 |`uni.offNetworkStatusChange()`|`uni.offNetworkStatusChange`|uni-app 取消监听网络状态变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/network.html#offnetworkstatuschange>。|
-|`uni.onThemeChange()`|`uni.onThemeChange`|uni-app 监听系统主题状态变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/theme.html>。|
+|`uni.onThemeChange()`|`uni.onThemeChange`|uni-app 监听系统主题状态变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/theme.html#onthemechange>。|
+|`uni.offThemeChange()`|`uni.offThemeChange`|uni-app 取消监听系统主题状态变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/theme.html#offthemechange>。|
 |`uni.onAccelerometerChange()`|`uni.onAccelerometerChange`|uni-app 监听加速度数据。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/accelerometer.html#onaccelerometerchange>。|
 |`uni.offAccelerometerChange()`|`uni.offAccelerometerChange`|uni-app 取消监听加速度数据。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/accelerometer.html#offaccelerometerchange>。|
 |`uni.startAccelerometer()`|`uni.startAccelerometer`|uni-app 开始监听加速度数据。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/accelerometer.html#startaccelerometer>。|
@@ -455,7 +456,7 @@
 |`uni.setTabBarBadge()`|`uni.setTabBarBadge`|uni-app 设置 TabBar 某一项徽标。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/tabbar.html#settabbarbadge>。|
 |`uni.removeTabBarBadge()`|`uni.removeTabBarBadge`|uni-app 移除 tabBar 某一项徽标。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/tabbar.html#removetabbarbadge>。|
 |`uni.showTabBarRedDot()`|`uni.showTabBarRedDot`|uni-app 设置 TabBar 某一项红点。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/tabbar.html#showtabbarreddot>。|
-|`uni.hideTabBarRedDot()`|`uni.hideTabBarRedDot`|uni-app 移除 tabBar 某一项红点。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/tabbar.html#hidetabbarreddot>。|
+|`uni.hideTabBarRedDot()`|`uni.hideTabBarRedDot`|uni-app 移除 TabBar 某一项红点。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/tabbar.html#hidetabbarreddot>。|
 |`uni.setBackgroundColor()`|`uni.setBackgroundColor`|uni-app 动态设置窗口背景色。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/bgcolor.html#setbackgroundcolor>。|
 |`uni.setBackgroundTextStyle()`|`uni.setBackgroundTextStyle`|uni-app 动态设置下拉背景字体、加载图的样式。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/bgcolor.html#setbackgroundtextstyle>。|
 |`uni.createAnimation()`|`uni.createAnimation`|uni-app 创建动画实例。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/animation.html>。|
@@ -486,7 +487,7 @@
 |`uni.getProvider()`|`uni.getProvider`|uni-app 获取服务供应商。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/provider.html>。|
 |`uni.login()`|`uni.login`|uni-app 登录。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#login>。|
 |`uni.checkSession()`|`uni.checkSession`|uni-app 检查登录状态。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#uni-checksession>。|
-|`uni.getUserProfile()`|`uni.getUserProfile`|uni-app getUserProfile。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#getuserprofile>。|
+|`uni.getUserProfile()`|`uni.getUserProfile`|uni-app 获取用户信息，每次调用都会弹出授权窗口，用户同意后返回 userInfo。微信小程序基础库 2.27.1 起该能力已被收回。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#getuserprofile>。|
 |`uni.share()`|`uni.share`|uni-app 分享。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/share.html#share>。|
 |`uni.showShareMenu()`|`uni.showShareMenu`|uni-app 原生菜单显示分享按钮。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/share.html#showsharemenu>。|
 |`uni.hideShareMenu()`|`uni.hideShareMenu`|uni-app 原生菜单隐藏分享按钮。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/share.html#hidesharemenu>。|
@@ -516,29 +517,29 @@
 |`uni.offWifiConnected()`|`uni.offWifiConnected`|uni-app 移除监听连接 WiFi。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。|
 |`uni.onWifiConnectedWithPartialInfo()`|`uni.onWifiConnectedWithPartialInfo`|uni-app 监听连接 WiFi（信息更少）。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。|
 |`uni.offWifiConnectedWithPartialInfo()`|`uni.offWifiConnectedWithPartialInfo`|uni-app 移除监听连接 WiFi（信息更少）。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/wifi.html>。|
-|`uni.getLaunchOptionsSync()`|`uni.getLaunchOptionsSync`|uni-app getLaunchOptionsSync。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getLaunchOptionsSync.html>。|
-|`uni.getEnterOptionsSync()`|`uni.getEnterOptionsSync`|uni-app getEnterOptionsSync。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/getEnterOptionsSync.html>。|
+|`uni.getLaunchOptionsSync()`|`uni.getLaunchOptionsSync`|uni-app 获取启动时的参数，返回值与 App onLaunch 的回调参数一致。更多信息查看 <https://uniapp.dcloud.net.cn/api/getLaunchOptionsSync.html>。|
+|`uni.getEnterOptionsSync()`|`uni.getEnterOptionsSync`|uni-app 获取本次启动时的参数。更多信息查看 <https://uniapp.dcloud.net.cn/api/getEnterOptionsSync.html>。|
 |`uni.log()`|`uni.log`|uni-app 日志输出。更多信息查看 <https://uniapp.dcloud.net.cn/api/log.html>。|
-|`uni.getDeviceInfo()`|`uni.getDeviceInfo`|uni-app getDeviceInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getDeviceInfo.html>。|
-|`uni.getWindowInfo()`|`uni.getWindowInfo`|uni-app getWindowInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getWindowInfo.html>。|
-|`uni.getAppBaseInfo()`|`uni.getAppBaseInfo`|uni-app getAppBaseInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getAppBaseInfo.html>。|
-|`uni.getAppAuthorizeSetting()`|`uni.getAppAuthorizeSetting`|uni-app getAppAuthorizeSetting。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getappauthorizesetting.html>。|
-|`uni.getSystemSetting()`|`uni.getSystemSetting`|uni-app getSystemSetting。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getsystemsetting.html>。|
+|`uni.getDeviceInfo()`|`uni.getDeviceInfo`|uni-app 获取设备信息，如品牌、型号和设备类型。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getDeviceInfo.html>。|
+|`uni.getWindowInfo()`|`uni.getWindowInfo`|uni-app 获取窗口信息，如屏幕尺寸、窗口尺寸和状态栏高度。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getWindowInfo.html>。|
+|`uni.getAppBaseInfo()`|`uni.getAppBaseInfo`|uni-app 获取 App 基础信息，如 appid、名称和版本。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getAppBaseInfo.html>。|
+|`uni.getAppAuthorizeSetting()`|`uni.getAppAuthorizeSetting`|uni-app 获取 App 授权设置，即相册、相机、麦克风等权限的状态。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getappauthorizesetting.html>。|
+|`uni.getSystemSetting()`|`uni.getSystemSetting`|uni-app 获取系统设置，即蓝牙、定位和 Wi-Fi 等系统开关。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/getsystemsetting.html>。|
 |`uni.openAppAuthorizeSetting()`|`uni.openAppAuthorizeSetting`|uni-app 打开 App 权限设置页。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/openappauthorizesetting.html>。|
 |`uni.createRequestPermissionListener()`|`uni.createRequestPermissionListener`|uni-app 创建权限请求监听器。更多信息查看 <https://uniapp.dcloud.net.cn/api/system/create-request-permission-listener.html>。|
-|`uni.chooseMedia()`|`uni.chooseMedia`|uni-app chooseMedia。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#choosemedia>。|
-|`uni.getVideoInfo()`|`uni.getVideoInfo`|uni-app getVideoInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#getvideoinfo>。|
-|`uni.compressVideo()`|`uni.compressVideo`|uni-app compressVideo。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#compressvideo>。|
-|`uni.openVideoEditor()`|`uni.openVideoEditor`|uni-app openVideoEditor。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#openvideoeditor>。|
+|`uni.chooseMedia()`|`uni.chooseMedia`|uni-app 拍摄或从相册选择图片、视频。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#choosemedia>。|
+|`uni.getVideoInfo()`|`uni.getVideoInfo`|uni-app 获取视频详细信息。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#getvideoinfo>。|
+|`uni.compressVideo()`|`uni.compressVideo`|uni-app 压缩视频，可指定 quality，也可指定 bitrate、fps 和 resolution 做精细控制。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#compressvideo>。|
+|`uni.openVideoEditor()`|`uni.openVideoEditor`|uni-app 打开视频编辑器。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/video.html#openvideoeditor>。|
 |`uni.createMediaContainer()`|`uni.createMediaContainer`|uni-app 创建媒体容器。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/media-container.html>。|
 |`uni.closePreviewImage()`|`uni.closePreviewImage`|uni-app 关闭图片预览。更多信息查看 <https://uniapp.dcloud.net.cn/api/media/image.html#closepreviewimage>。|
 |`uni.onLocationChange()`|`uni.onLocationChange`|uni-app 监听实时地理位置变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。|
 |`uni.offLocationChange()`|`uni.offLocationChange`|uni-app 移除实时地理位置变化监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。|
 |`uni.onLocationChangeError()`|`uni.onLocationChangeError`|uni-app 监听地理位置变化错误。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。|
 |`uni.offLocationChangeError()`|`uni.offLocationChangeError`|uni-app 移除地理位置变化错误监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location.html>。|
-|`uni.startLocationUpdate()`|`uni.startLocationUpdate`|uni-app startLocationUpdate。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。|
-|`uni.stopLocationUpdate()`|`uni.stopLocationUpdate`|uni-app stopLocationUpdate。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。|
-|`uni.startLocationUpdateBackground()`|`uni.startLocationUpdateBackground`|uni-app startLocationUpdateBackground。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。|
+|`uni.startLocationUpdate()`|`uni.startLocationUpdate`|uni-app 开启小程序进入前台时接收位置消息。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。|
+|`uni.stopLocationUpdate()`|`uni.stopLocationUpdate`|uni-app 关闭接收位置消息，前后台都停止。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。|
+|`uni.startLocationUpdateBackground()`|`uni.startLocationUpdateBackground`|uni-app 开启小程序进入后台时也接收位置消息。更多信息查看 <https://uniapp.dcloud.net.cn/api/location/location-change.html>。|
 |`uni.getFileSystemManager()`|`uni.getFileSystemManager`|uni-app 获取全局唯一的文件管理器。更多信息查看 <https://uniapp.dcloud.net.cn/api/file/getFileSystemManager.html>。|
 |`uni.createIntersectionObserver()`|`uni.createIntersectionObserver`|uni-app 创建并返回一个 IntersectionObserver 对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/intersection-observer.html>。|
 |`uni.createMediaQueryObserver()`|`uni.createMediaQueryObserver`|uni-app 创建 MediaQueryObserver 对象。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/media-query-observer.html>。|
@@ -547,9 +548,9 @@
 |`uni.onLocaleChange()`|`uni.onLocaleChange`|uni-app 监听语言变化。更多信息查看 <https://uniapp.dcloud.net.cn/api/ui/locale.html#onlocalechange>。|
 |`uni.rpx2px()`|`uni.rpx2px`|uni-app rpx 转 px。更多信息查看 <https://doc.dcloud.net.cn/uni-app-x/api/rpx2px.html>。|
 |`uni.preloadPage()`|`uni.preloadPage`|uni-app 预加载页面。更多信息查看 <https://uniapp.dcloud.net.cn/api/preload-page.html>。|
-|`uni.configMTLS()`|`uni.configMTLS`|uni-app configMTLS。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/request.html#configmtls>。|
-|`uni.startLocalServiceDiscovery()`|`uni.startLocalServiceDiscovery`|uni-app startLocalServiceDiscovery。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
-|`uni.stopLocalServiceDiscovery()`|`uni.stopLocalServiceDiscovery`|uni-app stopLocalServiceDiscovery。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
+|`uni.configMTLS()`|`uni.configMTLS`|uni-app 为 https 请求配置自签名证书。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/request.html#configmtls>。|
+|`uni.startLocalServiceDiscovery()`|`uni.startLocalServiceDiscovery`|uni-app 开始搜索局域网内的 mDNS 服务。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
+|`uni.stopLocalServiceDiscovery()`|`uni.stopLocalServiceDiscovery`|uni-app 停止搜索局域网内的 mDNS 服务。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
 |`uni.onLocalServiceFound()`|`uni.onLocalServiceFound`|uni-app 监听发现 mDNS 服务。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
 |`uni.onLocalServiceLost()`|`uni.onLocalServiceLost`|uni-app 监听 mDNS 服务离开。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
 |`uni.onLocalServiceDiscoveryStop()`|`uni.onLocalServiceDiscoveryStop`|uni-app 监听 mDNS 服务发现停止。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
@@ -557,22 +558,22 @@
 |`uni.offLocalServiceLost()`|`uni.offLocalServiceLost`|uni-app 移除 mDNS 服务离开监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
 |`uni.offLocalServiceDiscoveryStop()`|`uni.offLocalServiceDiscoveryStop`|uni-app 移除 mDNS 服务发现停止监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/mDNS.html>。|
 |`uni.createUDPSocket()`|`uni.createUDPSocket`|uni-app 创建 UDP Socket 实例。更多信息查看 <https://uniapp.dcloud.net.cn/api/request/UDP.html>。|
-|`uni.shareWithSystem()`|`uni.shareWithSystem`|uni-app shareWithSystem。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/share.html#sharewithsystem>。|
-|`uni.requestVirtualPayment()`|`uni.requestVirtualPayment`|uni-app requestVirtualPayment。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/virtualPayment.html>。|
-|`uni.requestMerchantTransfer()`|`uni.requestMerchantTransfer`|uni-app requestMerchantTransfer。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/request-merchant-transfer.html>。|
-|`uni.getPushClientId()`|`uni.getPushClientId`|uni-app getPushClientId。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#getpushclientid>。|
+|`uni.shareWithSystem()`|`uni.shareWithSystem`|uni-app 调用系统分享组件发送分享消息，不需要配置分享 SDK。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/share.html#sharewithsystem>。|
+|`uni.requestVirtualPayment()`|`uni.requestVirtualPayment`|uni-app 发起微信小程序虚拟支付。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/virtualPayment.html>。|
+|`uni.requestMerchantTransfer()`|`uni.requestMerchantTransfer`|uni-app 拉起收款确认页面，用于商家转账的用户确认模式，需安装 uni-requestMerchantTransfer 插件。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/request-merchant-transfer.html>。|
+|`uni.getPushClientId()`|`uni.getPushClientId`|uni-app 获取客户端唯一的推送标识，仅支持 uni-push 2.0。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#getpushclientid>。|
 |`uni.onPushMessage()`|`uni.onPushMessage`|uni-app 监听推送消息。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#onpushmessage>。|
 |`uni.offPushMessage()`|`uni.offPushMessage`|uni-app 移除推送消息监听。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#onpushmessage>。|
 |`uni.getChannelManager()`|`uni.getChannelManager`|uni-app 获取通道管理器。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#getchannelmanager>。|
-|`uni.createPushMessage()`|`uni.createPushMessage`|uni-app createPushMessage。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#createpushmessage>。|
-|`uni.getFacialRecognitionMetaInfo()`|`uni.getFacialRecognitionMetaInfo`|uni-app getFacialRecognitionMetaInfo。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/facialRecognitionVerify.html>。|
-|`uni.startFacialRecognitionVerify()`|`uni.startFacialRecognitionVerify`|uni-app startFacialRecognitionVerify。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/facialRecognitionVerify.html>。|
-|`uni.preLogin()`|`uni.preLogin`|uni-app preLogin。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#prelogin>。|
+|`uni.createPushMessage()`|`uni.createPushMessage`|uni-app 创建本地通知栏消息。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/push.html#createpushmessage>。|
+|`uni.getFacialRecognitionMetaInfo()`|`uni.getFacialRecognitionMetaInfo`|uni-app 获取实人认证设备信息，供云函数获取 certifyId 使用。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/facialRecognitionVerify.html>。|
+|`uni.startFacialRecognitionVerify()`|`uni.startFacialRecognitionVerify`|uni-app 打开实人认证界面，引导用户完成刷脸。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/facialRecognitionVerify.html>。|
+|`uni.preLogin()`|`uni.preLogin`|uni-app 预登录，用于 App 手机号一键登录。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#prelogin>。|
 |`uni.closeAuthView()`|`uni.closeAuthView`|uni-app 关闭认证页面。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#closeauthview>。|
-|`uni.getCheckBoxState()`|`uni.getCheckBoxState`|uni-app getCheckBoxState。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#getcheckboxstate>。|
+|`uni.getCheckBoxState()`|`uni.getCheckBoxState`|uni-app 获取一键登录条款勾选框的状态。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#getcheckboxstate>。|
 |`uni.getUniverifyManager()`|`uni.getUniverifyManager`|uni-app 获取 UniverifyManager。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#getuniverifymanager>。|
 |`uni.requireNativePlugin()`|`uni.requireNativePlugin`|uni-app 引用原生插件。更多信息查看 <https://uniapp.dcloud.net.cn/tutorial/nvue-api.html>。|
-|`uni.getExtConfig()`|`uni.getExtConfig`|uni-app getExtConfig。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/get-extconfig.html>。|
+|`uni.getExtConfig()`|`uni.getExtConfig`|uni-app 获取第三方平台自定义的数据字段。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/get-extconfig.html>。|
 |`uni.getExtConfigSync()`|`uni.getExtConfigSync`|uni-app 获取第三方平台配置（同步）。更多信息查看 <https://uniapp.dcloud.net.cn/api/other/get-extconfig.html>。|
 |`uni.createWebviewContext()`|`uni.createWebviewContext`|uni-app 创建 webview 上下文。更多信息查看 <https://uniapp.dcloud.net.cn/api/create-webview-context.html>。|
 |`uni.getUserInfo()`|`uni.getUserInfo`|uni-app 获取用户信息。推荐使用 uni.getUserProfile 代替。更多信息查看 <https://uniapp.dcloud.net.cn/api/plugins/login.html#getuserinfo>。|
